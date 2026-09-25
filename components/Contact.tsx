@@ -15,49 +15,47 @@ const SERVICES = [
 
 export default function Contact() {
   const [sent, setSent] = useState(false);
+  const [refId, setRefId] = useState("");
   const [sending, setSending] = useState(false);
   const [error, setError] = useState("");
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError("");
-    const fd = new FormData(e.currentTarget);
-    const name = String(fd.get("name") || "");
-    const email = String(fd.get("email") || "");
-    const company = String(fd.get("company") || "");
-    const service = String(fd.get("service") || "");
-    const details = String(fd.get("details") || "");
-    const budget = String(fd.get("budget") || "");
+    setSent(false);
+    const form = e.currentTarget;
+    const fd = new FormData(form);
+    const payload = {
+      name: String(fd.get("name") || ""),
+      email: String(fd.get("email") || ""),
+      company: String(fd.get("company") || ""),
+      service: String(fd.get("service") || ""),
+      details: String(fd.get("details") || ""),
+      budget: String(fd.get("budget") || ""),
+      website: String(fd.get("website") || ""), // honeypot — must stay empty
+    };
 
-    // If a Formspree/Web3Forms endpoint is configured, POST there.
-    // Set NEXT_PUBLIC_FORM_ENDPOINT=https://formspree.io/f/xxxx in .env.local
-    const endpoint = process.env.NEXT_PUBLIC_FORM_ENDPOINT;
-    if (endpoint) {
-      try {
-        setSending(true);
-        const res = await fetch(endpoint, {
-          method: "POST",
-          headers: { Accept: "application/json", "Content-Type": "application/json" },
-          body: JSON.stringify({ name, email, company, service, details, budget }),
-        });
-        if (!res.ok) throw new Error("submit failed");
-        setSent(true);
-        e.currentTarget.reset();
-      } catch {
-        setError("Couldn't send just now — please email zyracmt@gmail.com directly.");
-      } finally {
-        setSending(false);
-      }
-      return;
+    try {
+      setSending(true);
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data?.error || "submit failed");
+      setSent(true);
+      setRefId(String(data?.refId || ""));
+      form.reset();
+    } catch (err) {
+      setError(
+        err instanceof Error && err.message && err.message !== "submit failed"
+          ? err.message
+          : "Couldn't send just now — please email zyracmt@gmail.com directly."
+      );
+    } finally {
+      setSending(false);
     }
-
-    const subject = encodeURIComponent(`ZYRA inquiry — ${service} — ${name}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nCompany: ${company}\nService: ${service}\nBudget/Timeline: ${budget}\n\n${details}`
-    );
-    // Frontend-only: opens the visitor's mail client. Swap with Formspree/Web3Forms endpoint later.
-    window.location.href = `mailto:zyracmt@gmail.com?subject=${subject}&body=${body}`;
-    setSent(true);
   };
 
   return (
@@ -133,6 +131,15 @@ export default function Contact() {
                   Budget / Timeline
                   <input name="budget" placeholder="e.g. $10k–25k / ₹8L–20L · 8 weeks" className="rounded-lg border border-line bg-paper px-4 py-3 text-[14.5px] text-ink outline-none placeholder:text-faint focus:border-accent/60" />
                 </label>
+                {/* Honeypot — hidden from humans, catches bots */}
+                <input
+                  type="text"
+                  name="website"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  className="hidden"
+                />
               </div>
               <button
                 type="submit"
@@ -142,8 +149,14 @@ export default function Contact() {
                 {sending ? "Sending…" : "Start Conversation"}
               </button>
               {sent && (
-                <p className="mt-4 text-[13.5px] text-emerald-600">
+                <p className="mt-4 text-[13.5px] leading-relaxed text-emerald-600">
                   Message received — we&apos;ll reply within 2 business days.
+                  {refId && (
+                    <>
+                      {" "}
+                      Your reference ID: <span className="font-mono font-semibold tracking-wide text-emerald-700">{refId}</span> — we&apos;ve also emailed you a confirmation.
+                    </>
+                  )}
                 </p>
               )}
               {error && (
