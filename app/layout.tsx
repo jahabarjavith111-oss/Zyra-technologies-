@@ -15,29 +15,58 @@ const body = Inter({
   subsets: ["latin"],
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://zyra.tech";
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  "https://zyra-technologies.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+
   title: {
-    default: "ZYRA Technologies — Engineering Intelligence. Building What's Next.",
+    default:
+      "ZYRA Technologies — Engineering Intelligence. Building What's Next.",
     template: "%s | ZYRA Technologies",
   },
+
   description:
     "ZYRA Technologies builds intelligent software, AI systems, digital products and technology solutions across AI, Software, Data, Cloud and Cybersecurity.",
+
+  keywords: [
+    "ZYRA Technologies",
+    "AI development",
+    "software development",
+    "web development",
+    "AI solutions",
+    "custom software development",
+    "data analytics",
+    "cloud solutions",
+    "cybersecurity",
+    "digital products",
+    "zelda",
+    "women safety",
+  ],
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
   openGraph: {
     type: "website",
     siteName: "ZYRA Technologies",
-    title: "ZYRA Technologies — Engineering Intelligence. Building What's Next.",
+    title:
+      "ZYRA Technologies — Engineering Intelligence. Building What's Next.",
     description:
       "AI · Software · Data · Cloud · Cybersecurity · Digital Products. We build intelligent systems for the next generation of businesses.",
+    url: SITE_URL,
   },
+
   twitter: {
     card: "summary_large_image",
     title: "ZYRA Technologies",
     description: "Engineering Intelligence. Building What's Next.",
   },
-  robots: { index: true, follow: true },
+
   icons: {
     icon: "/logo.png",
     apple: "/logo.png",
@@ -50,10 +79,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable} h-full`}>
+    <html
+      lang="en"
+      className={`${display.variable} ${body.variable} h-full`}
+    >
       <body className="min-h-full flex flex-col bg-paper text-ink">
         <Navbar />
+
         <div className="flex-1">{children}</div>
+
         <Footer />
       </body>
     </html>
