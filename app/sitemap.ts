@@ -2,7 +2,9 @@ import type { MetadataRoute } from "next";
 import { SERVICES, SOLUTIONS } from "@/lib/offerings";
 import { TEAM, CASES } from "@/lib/company";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://zyra.tech";
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  "https://zyra-technologies.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const statics = [
@@ -30,18 +32,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
+
     ...SOLUTIONS.map((s) => ({
       url: `${SITE_URL}/solutions/${s.slug}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
+
     ...TEAM.map((m) => ({
       url: `${SITE_URL}/leadership/${m.slug}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),
+
     ...CASES.map((c) => ({
       url: `${SITE_URL}/case-studies/${c.slug}`,
       lastModified: new Date(),
