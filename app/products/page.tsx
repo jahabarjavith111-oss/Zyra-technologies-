@@ -35,16 +35,7 @@ const WORKFLOW = [
   ["Monitored + resolved", "Authorities track movement, respond, and close the case."],
 ];
 
-const ARCHITECTURE: [string, string][] = [
-  ["Flutter", "Mobile application"],
-  ["React + Vite + Tailwind", "Police web dashboard"],
-  ["Node.js + Express", "Backend API"],
-  ["MySQL", "Database"],
-  ["Dio", "Mobile API communication"],
-  ["Geolocator", "Location services"],
-  ["Camera", "Emergency evidence recording"],
-  ["Socket.IO", "Real-time communication"],
-];
+
 
 export default function ProductsPage() {
   const faqs: [string, string][] = [
@@ -163,22 +154,6 @@ export default function ProductsPage() {
                 </div>
               </div>
             </article>
-          </Reveal>
-
-          <Reveal delay={100} className="mt-4">
-            <div className="card-ring rounded-2xl p-8">
-              <div className="text-[12px] font-semibold tracking-[0.24em] text-faint">
-                SYSTEM ARCHITECTURE
-              </div>
-              <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-                {ARCHITECTURE.map(([t, d]) => (
-                  <div key={t} className="rounded-xl border border-line bg-paper p-4">
-                    <div className="font-mono text-[13px] font-bold">{t}</div>
-                    <div className="mt-1 text-[12.5px] text-muted">{d}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
           </Reveal>
 
           <Reveal delay={120} className="mt-4">
