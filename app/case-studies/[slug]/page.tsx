@@ -52,7 +52,6 @@ export default async function CaseDetail({ params }: { params: Promise<{ slug: s
   const rows: [string, string][] = [
     ["Problem", c.problem],
     ["Solution", c.solution],
-    ["Technology", c.technology],
     ["Impact", c.impact],
   ];
 
@@ -79,13 +78,6 @@ export default async function CaseDetail({ params }: { params: Promise<{ slug: s
       <PageHero eyebrow={`Project — ${c.n}`} title={c.title} desc={c.subtitle} />
       <section className="border-t border-line">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
-          <Reveal>
-            <div className="flex flex-wrap gap-2">
-              {c.stack.map((t) => (
-                <span key={t} className="rounded-full border border-line bg-paper-2 px-4 py-1.5 font-mono text-[12.5px] text-ink">{t}</span>
-              ))}
-            </div>
-          </Reveal>
           <div className="mt-8 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">
             {rows.map(([h, p]) => (
               <div key={h} className="bg-paper-2 p-8">
