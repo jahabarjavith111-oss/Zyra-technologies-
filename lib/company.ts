@@ -43,6 +43,28 @@ export const TEAM: Member[] = [
       "Set ZYRA's engineering bar: reviewed code, tested systems and disciplined delivery.",
     ],
   },
+  {
+    slug: "cindhuja-b",
+    n: "03",
+    name: "CINDHUJA B",
+    role: "Chief Marketing Officer (CMO)",
+    focus: "Marketing & Branding · Digital Marketing · Content & Social Media · Brand Growth & Outreach",
+    bio: "Owns ZYRA Technologies' brand presence and marketing strategy — brand identity, digital marketing, content creation, audience engagement and growth across every project and product.",
+    owns: [
+      "Marketing & Branding",
+      "Digital Marketing",
+      "Content & Social Media",
+      "Brand Growth & Outreach",
+    ],
+    photo: "/team/cindhuja-b.jpeg",
+    contributions: [
+      "Leads ZYRA Technologies' marketing strategy and brand positioning.",
+      "Builds a consistent brand identity across the company's website, social media and digital platforms.",
+      "Develops marketing campaigns and engaging content to increase brand awareness and audience reach.",
+      "Drives client outreach, networking and partnership opportunities to support business growth.",
+      "Strengthens ZYRA's market presence by promoting its products, projects and technology solutions.",
+    ],
+  },
 ];
 
 export type Case = {
