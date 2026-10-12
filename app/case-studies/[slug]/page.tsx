@@ -89,7 +89,7 @@ export default async function CaseDetail({ params }: { params: Promise<{ slug: s
       <section className="border-t border-line">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
           <Reveal>
-            <div className="grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">
+            <div className="grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-3">
               <div className="bg-paper-2 p-8">
                 <div className="text-[12px] font-semibold tracking-[0.24em] text-accent">PROBLEM</div>
                 <p className="mt-3 text-[15px] leading-8 text-muted">{c.problem}</p>
