@@ -77,6 +77,9 @@ export type Case = {
   solution: string;
   technology: string;
   impact: string;
+  coreCapabilities: string[];
+  businessImpact: string[];
+  keyFeatures: string[];
 };
 
 export const CASES: Case[] = [
@@ -94,6 +97,26 @@ export const CASES: Case[] = [
       "Flutter app (Dio, Geolocator, Camera), React + Vite + Tailwind police dashboard, Node.js + Express API with JWT auth, MySQL, and Socket.IO for real-time case and location events.",
     impact:
       "Authorities receive an information-rich emergency case — status, live location, recorded evidence — on one screen, enabling faster coordinated response. Showcased at Thinamalar 'Vali Kaati' (29 March 2026, Tiruchirappalli) to ~200 attendees.",
+    coreCapabilities: [
+      "One-tap SOS with cancellation guard",
+      "Live GPS streaming during emergency",
+      "Automatic video evidence recording",
+      "Real-time police dashboard with case management",
+      "Socket.IO event streaming with JWT auth",
+    ],
+    businessImpact: [
+      "Reduces emergency response time from minutes to seconds",
+      "Provides live context (movement, evidence) vs static phone reports",
+      "Scalable for campuses, workplaces, city safety programs",
+      "Publicly validated at Thinamalar 'Vali Kaati' (200+ attendees)",
+    ],
+    keyFeatures: [
+      "Cross-platform Flutter app (Android & iOS)",
+      "React + Vite + Tailwind police web dashboard",
+      "Node.js + Express API with real-time Socket.IO",
+      "MySQL database with case & evidence storage",
+      "JWT-secured APIs with role-based access",
+    ],
   },
   {
     slug: "enterprise-data-platform",
@@ -109,6 +132,25 @@ export const CASES: Case[] = [
       "Modeled ELT pipelines, warehouse with tests and docs, BI semantic layer, and access controls with audit logging.",
     impact:
       "One definition per metric, dashboards leaders open weekly, and analysts freed from reconciliation to do analysis.",
+    coreCapabilities: [
+      "Modeled ELT pipelines with tests",
+      "Governed data warehouse with documentation",
+      "BI semantic layer for self-serve analytics",
+      "Access controls with audit logging",
+    ],
+    businessImpact: [
+      "Single source of truth — one definition per metric",
+      "Executive dashboards leaders trust and use weekly",
+      "Analysts freed from manual reconciliation",
+      "Scalable foundation for future data products",
+    ],
+    keyFeatures: [
+      "Python-based ELT with dbt-style modeling",
+      "Cloud data warehouse (Snowflake/BigQuery/Redshift)",
+      "SQL-based transformations with CI/CD",
+      "BI tool integration (Looker/Tableau/Power BI)",
+      "Role-based access with column-level security",
+    ],
   },
   {
     slug: "ai-support-copilot",
@@ -124,5 +166,24 @@ export const CASES: Case[] = [
       "RAG over curated sources, citation enforcement, human-in-the-loop review queue, and an eval harness with guardrails.",
     impact:
       "Faster first responses, consistent cited answers, and a knowledge base that improves with every resolved ticket.",
+    coreCapabilities: [
+      "Retrieval-Augmented Generation (RAG) over internal docs",
+      "Cited answers with source references",
+      "Human-in-the-loop review queue",
+      "Automated eval harness for answer quality",
+    ],
+    businessImpact: [
+      "Faster first response times for support tickets",
+      "Consistent, accurate answers with citations",
+      "Continuous improvement via eval feedback loop",
+      "Reduces senior engineer escalations",
+    ],
+    keyFeatures: [
+      "LLM-powered retrieval with vector search",
+      "Citation enforcement in every response",
+      "React-based review UI for human approval",
+      "Weekly eval dashboards tracking quality",
+      "Guardrails for hallucination prevention",
+    ],
   },
 ];
