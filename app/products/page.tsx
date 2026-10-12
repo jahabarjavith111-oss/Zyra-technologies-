@@ -124,7 +124,7 @@ export default function ProductsPage() {
                     ["Live location tracking", "GPS updates stream during the emergency — movement, not just a static pin."],
                     ["Evidence recording", "Video recording starts automatically and uploads to the emergency case."],
                     ["Police dashboard", "Active and pending cases, locations, evidence, status and resolution — one interface."],
-                    ["Real-time + secure", "Socket.IO event streaming with JWT-authenticated APIs."],
+                    ["Real-time & secure", "Live event streaming with enterprise-grade authentication."],
                   ].map(([t, d]) => (
                     <div key={t} className="rounded-xl border border-line bg-paper p-5">
                       <div className="font-display text-[15px] font-bold">{t}</div>
