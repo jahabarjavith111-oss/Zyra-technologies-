@@ -19,7 +19,7 @@ export const TEAM: Member[] = [
     focus: "Vision & Strategy · Business · Partnerships · Operations",
     bio: "Sets ZYRA's direction — which problems we solve, which markets we enter, and what excellence looks like. Owns vision and strategy, business growth, partnerships and operations.",
     owns: ["Vision & Strategy", "Business", "Partnerships", "Operations"],
-    photo: "/team/abdul-javid-j.jpeg",
+    photo: "/team/bragatheesh-v.png",
     contributions: [
       "Founded ZYRA Technologies and defined its vision — engineering intelligence, building what's next.",
       "Turned the Zelda women-safety concept into a shipped system, from idea to public showcase.",
@@ -35,7 +35,7 @@ export const TEAM: Member[] = [
     focus: "Technology · AI & GenAI · Engineering · Architecture",
     bio: "Owns the technical backbone — technology choices, AI and GenAI systems, engineering execution and architecture across every project and product.",
     owns: ["Technology", "AI & GenAI", "Engineering", "Architecture"],
-    photo: "/team/bragatheesh-v.jpeg",
+    photo: "/team/abdul-javid-j.png",
     contributions: [
       "Co-founded ZYRA Technologies and owns its entire technical direction.",
       "Architected the Zelda emergency response system — Flutter app, police dashboard, and real-time backend.",
@@ -56,7 +56,7 @@ export const TEAM: Member[] = [
       "Content & Social Media",
       "Brand Growth & Outreach",
     ],
-    photo: "/team/cindhuja-b.jpeg",
+    photo: "/team/cindhuja-b.png",
     contributions: [
       "Leads ZYRA Technologies' marketing strategy and brand positioning.",
       "Builds a consistent brand identity across the company's website, social media and digital platforms.",
