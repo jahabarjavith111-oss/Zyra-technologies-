@@ -4,6 +4,7 @@ import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { SOLUTIONS } from "@/lib/offerings";
 import { canonical, OG_IMAGE, SITE_URL } from "@/lib/seo";
 
@@ -55,9 +56,16 @@ export default async function SolutionDetail({ params }: { params: Promise<{ slu
     ],
   };
 
+  const breadcrumbs = [
+    { label: "Home", href: "/" },
+    { label: "Solutions", href: "/solutions" },
+    { label: `${s.title} for Modern Businesses`, href: canonical(`/solutions/${s.slug}`) },
+  ];
+
   return (
     <main>
       <JsonLd data={breadcrumbSchema} />
+      <Breadcrumbs items={breadcrumbs} />
       <PageHero eyebrow={`Solutions for Businesses · ${s.n}`} title={`${s.title} for Modern Businesses`} desc={s.tagline} />
       <section className="border-t border-line">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">

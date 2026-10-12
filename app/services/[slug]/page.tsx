@@ -4,6 +4,7 @@ import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { SERVICES } from "@/lib/offerings";
 import { canonical, OG_IMAGE, SITE_URL } from "@/lib/seo";
 
@@ -84,9 +85,16 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
     ],
   };
 
+  const breadcrumbs = [
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/services" },
+    { label: `${s.title} Services in India`, href: canonical(`/services/${s.slug}`) },
+  ];
+
   return (
     <main>
       <JsonLd data={[serviceSchema, breadcrumbSchema]} />
+      <Breadcrumbs items={breadcrumbs} />
       <PageHero eyebrow={`Services in India · ${s.n}`} title={`${s.title} Services in India`} desc={s.tagline} />
       <section className="border-t border-line">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">

@@ -4,6 +4,7 @@ import Reveal from "@/components/Reveal";
 import PhotoFrame from "@/components/PhotoFrame";
 import CTABand from "@/components/CTABand";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { TEAM } from "@/lib/company";
 import { canonical, OG_IMAGE, SITE_URL } from "@/lib/seo";
 
@@ -44,6 +45,12 @@ export default async function MemberDetail({ params }: { params: Promise<{ slug:
   const m = TEAM.find((x) => x.slug === slug);
   if (!m) notFound();
 
+  const breadcrumbs = [
+    { label: "Home", href: "/" },
+    { label: "Leadership", href: "/leadership" },
+    { label: m.name, href: canonical(`/leadership/${m.slug}`) },
+  ];
+
   return (
     <main>
       <JsonLd
@@ -62,6 +69,7 @@ export default async function MemberDetail({ params }: { params: Promise<{ slug:
           url: canonical(`/leadership/${m.slug}`),
         }}
       />
+      <Breadcrumbs items={breadcrumbs} />
       <PageHero eyebrow={`Leadership · ${m.n}`} title={m.name} desc={m.role} />
       <section className="border-t border-line">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">

@@ -4,6 +4,7 @@ import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { CASES } from "@/lib/company";
 import { canonical, OG_IMAGE, SITE_URL } from "@/lib/seo";
 
@@ -55,19 +56,26 @@ export default async function CaseDetail({ params }: { params: Promise<{ slug: s
     ["Impact", c.impact],
   ];
 
+  const breadcrumbs = [
+    { label: "Home", href: "/" },
+    { label: "Case Studies", href: "/case-studies" },
+    { label: c.title, href: canonical(`/case-studies/${c.slug}`) },
+  ];
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: `${c.title} — ${c.subtitle}`,
+    description: c.solution,
+    author: { "@type": "Organization", name: "ZYRA Technologies", url: SITE_URL },
+    publisher: { "@type": "Organization", name: "ZYRA Technologies", url: SITE_URL },
+    mainEntityOfPage: canonical(`/case-studies/${c.slug}`),
+  };
+
   return (
     <main>
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "Article",
-          headline: `${c.title} — ${c.subtitle}`,
-          description: c.solution,
-          author: { "@type": "Organization", name: "ZYRA Technologies", url: SITE_URL },
-          publisher: { "@type": "Organization", name: "ZYRA Technologies", url: SITE_URL },
-          mainEntityOfPage: canonical(`/case-studies/${c.slug}`),
-        }}
-      />
+      <JsonLd data={articleSchema} />
+      <Breadcrumbs items={breadcrumbs} />
       <PageHero eyebrow={`Project — ${c.n}`} title={c.title} desc={c.subtitle} />
       <section className="border-t border-line">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
