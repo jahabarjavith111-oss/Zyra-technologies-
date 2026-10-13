@@ -116,8 +116,7 @@ export const metadata: Metadata = {
   },
 
   verification: {
-    // Fill in via Vercel env / Search Console when available:
-    // google: "your-google-verification-code",
+    google: "google31b0da4419ec65c5",
     // other: { "msvalidate.01": "your-bing-verification-code" },
   },
 };
