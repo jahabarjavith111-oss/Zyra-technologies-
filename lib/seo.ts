@@ -58,7 +58,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     path: "/about",
   },
   services: {
-    title: "Software Development Services India | AI, Data, Cloud — ZyraTec",
+    title: "Software Development Services India | ZyraTec",
     description:
       "Software development services in India: AI & Generative AI, software engineering, data & analytics, cloud & DevOps, cybersecurity and digital products by ZyraTec. Remote-first delivery across India and worldwide.",
     keywords: [
@@ -90,7 +90,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     path: "/products",
   },
   solutions: {
-    title: "Business Technology Solutions — AI, Automation, Cloud | ZyraTec",
+    title: "Business Technology Solutions — AI & Automation | ZyraTec",
     description:
       "Packaged technology solutions: intelligent automation, AI transformation, enterprise software, data intelligence, cloud transformation and digital security.",
     keywords: ["intelligent automation India", "AI transformation", "enterprise software India"],
