@@ -20,7 +20,7 @@ export default function OgImage() {
         }}
       >
         <div style={{ display: "flex", fontSize: 28, letterSpacing: 8, color: "#c98d1c", fontWeight: 700 }}>
-          ZYRA TECHNOLOGIES
+          ZyraTec
         </div>
         <div style={{ display: "flex", flexDirection: "column", marginTop: 16 }}>
           <div style={{ display: "flex", fontSize: 72, fontWeight: 800, lineHeight: 1.05 }}>

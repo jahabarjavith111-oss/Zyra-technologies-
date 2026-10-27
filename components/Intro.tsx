@@ -22,7 +22,7 @@ export default function Intro() {
           </Reveal>
           <Reveal delay={120}>
             <p className="text-[16.5px] leading-8 text-muted">
-              ZYRA Technologies is a software company in Trichy, Tamil Nadu, India
+              ZyraTec is a software company in Trichy, Tamil Nadu, India
               focused on building intelligent digital solutions that combine software
               engineering, artificial intelligence, data and cloud technologies —
               including the ZELDA women safety app.

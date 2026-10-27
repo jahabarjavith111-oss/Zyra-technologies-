@@ -24,7 +24,7 @@ export const metadata = {
     title: PAGE_SEO.careers.title,
     description: PAGE_SEO.careers.description,
     url: canonical(PAGE_SEO.careers.path),
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Careers at ZYRA Technologies" }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Careers at ZyraTec" }],
   },
   twitter: {
     card: "summary_large_image" as const,
@@ -40,14 +40,14 @@ export default function CareersPage() {
       <PageHero
         eyebrow="Careers"
         title="Build the Future With Us"
-        desc="We're a remote-first team headquartered in Ammapettai, Trichy. Why ZYRA → Culture → Open Positions → Apply."
+        desc="We're a remote-first team headquartered in Ammapettai, Trichy. Why ZyraTec → Culture → Open Positions → Apply."
       />
       <section className="border-t border-line">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
           <div className="grid gap-4 lg:grid-cols-2">
             <Reveal>
               <div className="card-ring h-full rounded-2xl p-8">
-                <div className="text-[12px] font-semibold tracking-[0.24em] text-accent">WHY ZYRA</div>
+                <div className="text-[12px] font-semibold tracking-[0.24em] text-accent">WHY ZyraTec</div>
                 <ul className="mt-4 space-y-3 text-[15px] leading-7 text-muted">
                   <li>· Work on AI systems that actually ship to production.</li>
                   <li>· Small senior team — your code reaches users fast.</li>

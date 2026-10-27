@@ -57,7 +57,7 @@ export default function Intelligence() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_40%,rgba(201,141,28,0.14),transparent_70%)]" />
       <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28">
         <Reveal className="text-center">
-          <p className="eyebrow">ZYRA Intelligence</p>
+          <p className="eyebrow">ZyraTec Intelligence</p>
           <h2 className="section-head mx-auto mt-4 max-w-2xl font-display text-3xl font-bold tracking-tight sm:text-4xl text-balance">
             Where Intelligence Meets Engineering
           </h2>

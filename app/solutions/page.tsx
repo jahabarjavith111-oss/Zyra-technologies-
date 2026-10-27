@@ -15,7 +15,7 @@ export const metadata = {
     title: PAGE_SEO.solutions.title,
     description: PAGE_SEO.solutions.description,
     url: canonical(PAGE_SEO.solutions.path),
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "ZYRA business technology solutions" }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "ZyraTec business technology solutions" }],
   },
   twitter: {
     card: "summary_large_image" as const,

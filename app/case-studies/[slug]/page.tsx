@@ -15,14 +15,14 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const c = CASES.find((x) => x.slug === slug);
-  if (!c) return { title: "Case Study — ZYRA Technologies" };
+  if (!c) return { title: "Case Study — ZyraTec" };
   const path = `/case-studies/${c.slug}`;
   const title = c.slug === "zelda-women-safety"
-    ? "ZELDA Women Safety App Case Study — SOS, Live GPS & Police Dashboard | ZYRA"
-    : `${c.title} Case Study — ${c.subtitle} | ZYRA Technologies`;
+    ? "ZELDA Women Safety App Case Study — SOS, Live GPS & Police Dashboard | ZyraTec"
+    : `${c.title} Case Study — ${c.subtitle} | ZyraTec`;
   const description = c.slug === "zelda-women-safety"
-    ? "How ZYRA built ZELDA, a women safety app in India: one-tap SOS, live GPS streaming, automatic evidence recording and a real-time police dashboard. Showcased to 200 attendees in Trichy."
-    : `${c.title}: ${c.subtitle}. Problem, solution, technology and impact by ZYRA Technologies, India.`;
+    ? "How ZyraTec built ZELDA, a women safety app in India: one-tap SOS, live GPS streaming, automatic evidence recording and a real-time police dashboard. Showcased to 200 attendees in Trichy."
+    : `${c.title}: ${c.subtitle}. Problem, solution, technology and impact by ZyraTec, India.`;
   return {
     title,
     description,
@@ -31,9 +31,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title,
       description,
       url: canonical(path),
-      siteName: "ZYRA Technologies",
+      siteName: "ZyraTec",
       type: "article",
-      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${c.title} case study — ZYRA` }],
+      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${c.title} case study — ZyraTec` }],
     },
     twitter: {
       card: "summary_large_image" as const,
@@ -76,8 +76,8 @@ export default async function CaseDetail({ params }: { params: Promise<{ slug: s
     "@type": "Article",
     headline: `${c.title} — ${c.subtitle}`,
     description: c.solution,
-    author: { "@type": "Organization", name: "ZYRA Technologies", url: SITE_URL },
-    publisher: { "@type": "Organization", name: "ZYRA Technologies", url: SITE_URL },
+    author: { "@type": "Organization", name: "ZyraTec", url: SITE_URL },
+    publisher: { "@type": "Organization", name: "ZyraTec", url: SITE_URL },
     mainEntityOfPage: canonical(`/case-studies/${c.slug}`),
   };
 

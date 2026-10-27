@@ -10,13 +10,13 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <Image
                 src="/logo.png"
-                alt="ZYRA Technologies logo"
+                alt="ZyraTec logo"
                 width={52}
                 height={36}
                 className="h-9 w-[52px] rounded-md object-contain"
               />
               <div className="font-display text-lg font-bold tracking-[0.18em]">
-                ZYRA TECHNOLOGIES
+                ZyraTec
               </div>
             </div>
             <p className="mt-4 max-w-sm text-[15px] leading-7 text-muted">
@@ -64,7 +64,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-14 flex flex-col gap-3 border-t border-line pt-7 text-[13px] text-faint sm:flex-row sm:items-center sm:justify-between">
-          <span>© 2026 ZYRA Technologies. All Rights Reserved.</span>
+          <span>© 2026 ZyraTec. All Rights Reserved.</span>
           <span>Engineering Intelligence · Building What&apos;s Next</span>
         </div>
       </div>

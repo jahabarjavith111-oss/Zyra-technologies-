@@ -28,17 +28,16 @@ export const metadata: Metadata = {
 
   title: {
     default:
-      "ZYRA Technologies | Software, AI & Women Safety App Company in India",
+      "ZyraTec | Software, AI & Women Safety App Company in India",
     template: "%s",
   },
 
   description:
-    "ZYRA Technologies is a software company in Trichy, India building AI development, enterprise software, data, cloud, cybersecurity solutions and ZELDA women safety app.",
+    "ZyraTec is a software company in Trichy, India building AI development, enterprise software, data, cloud, cybersecurity solutions and ZELDA women safety app.",
 
   keywords: [
-    "ZYRA Technologies",
-    "zyra",
-    "zyratech",
+    "ZyraTec",
+    "zyratec",
     "software company Trichy",
     "software company India",
     "software development company Tamil Nadu",
@@ -78,7 +77,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
-    title: "ZYRA Technologies | Software, AI & Women Safety App Company in India",
+    title: "ZyraTec | Software, AI & Women Safety App Company in India",
     description:
       "AI · Software · Data · Cloud · Cybersecurity · Digital Products · ZELDA women safety app. A software company in Trichy, India building intelligent systems.",
     url: SITE_URL,
@@ -88,14 +87,14 @@ export const metadata: Metadata = {
         url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "ZYRA Technologies — Engineering Intelligence. Building What's Next.",
+        alt: "ZyraTec — Engineering Intelligence. Building What's Next.",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "ZYRA Technologies | Software, AI & Women Safety App Company in India",
+    title: "ZyraTec | Software, AI & Women Safety App Company in India",
     description:
       "Software company in Trichy, India — AI development, enterprise software, data, cloud, cybersecurity and ZELDA women safety app.",
     images: [OG_IMAGE],
@@ -134,7 +133,7 @@ const organizationSchema = {
         url: `${SITE_URL}/logo.png`,
       },
       description:
-        "ZYRA Technologies is a software company in Trichy, Tamil Nadu, India building AI systems, enterprise software, data platforms, cloud solutions, cybersecurity and the ZELDA women safety app.",
+        "ZyraTec is a software company in Trichy, Tamil Nadu, India building AI systems, enterprise software, data platforms, cloud solutions, cybersecurity and the ZELDA women safety app.",
       email: CONTACT_EMAIL,
       telephone: CONTACT_PHONES[0],
       address: {

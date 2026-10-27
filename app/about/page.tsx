@@ -22,7 +22,7 @@ export const metadata = {
     title: PAGE_SEO.about.title,
     description: PAGE_SEO.about.description,
     url: canonical(PAGE_SEO.about.path),
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "About ZYRA Technologies" }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "About ZyraTec" }],
   },
   twitter: {
     card: "summary_large_image" as const,
@@ -36,9 +36,9 @@ export default function AboutPage() {
   return (
     <main>
       <PageHero
-        eyebrow="About ZYRA"
+        eyebrow="About ZyraTec"
         title="Who We Are"
-        desc="ZYRA Technologies is a technology company building intelligent digital solutions across software, AI, data and cloud."
+        desc="ZyraTec is a technology company building intelligent digital solutions across software, AI, data and cloud."
       />
       <section className="border-t border-line">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
@@ -47,7 +47,7 @@ export default function AboutPage() {
               <div className="card-ring h-full rounded-2xl p-8">
                 <div className="text-[12px] font-semibold tracking-[0.24em] text-accent">OUR STORY</div>
                 <p className="mt-4 text-[15.5px] leading-8 text-muted">
-                  ZYRA started with a simple belief — that intelligent
+                  ZyraTec started with a simple belief — that intelligent
                   technology should be engineered, not improvised. From AI
                   systems to enterprise platforms, we&apos;re building a company
                   where research rigor meets delivery discipline.

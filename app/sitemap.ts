@@ -4,7 +4,7 @@ import { TEAM, CASES } from "@/lib/company";
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ||
-  "https://zyra-technologies.vercel.app";
+  "https://zyratec.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const statics = [

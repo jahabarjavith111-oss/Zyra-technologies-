@@ -39,7 +39,7 @@ export default function Leadership() {
         <Reveal className="text-center">
           <p className="eyebrow">Leadership</p>
           <h2 className="section-head mt-4 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-            The people building ZYRA.
+            The people building ZyraTec.
           </h2>
         </Reveal>
 

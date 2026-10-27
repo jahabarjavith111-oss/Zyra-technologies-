@@ -15,7 +15,7 @@ export const metadata = {
     title: PAGE_SEO.products.title,
     description: PAGE_SEO.products.description,
     url: canonical(PAGE_SEO.products.path),
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "ZELDA women safety app by ZYRA" }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "ZELDA women safety app by ZyraTec" }],
   },
   twitter: {
     card: "summary_large_image" as const,
@@ -41,7 +41,7 @@ export default function ProductsPage() {
   const faqs: [string, string][] = [
     [
       "What is the ZELDA women safety app?",
-      "ZELDA by ZYRA Technologies is a women safety app built in India. In an emergency, the user taps SOS in the mobile app — the system streams live GPS location, records video evidence automatically, and delivers a real-time emergency case to a police dashboard so help arrives faster than a phone call alone.",
+      "ZELDA by ZyraTec is a women safety app built in India. In an emergency, the user taps SOS in the mobile app — the system streams live GPS location, records video evidence automatically, and delivers a real-time emergency case to a police dashboard so help arrives faster than a phone call alone.",
     ],
     [
       "How does ZELDA help women in an emergency?",
@@ -49,7 +49,7 @@ export default function ProductsPage() {
     ],
     [
       "Is ZELDA available across India?",
-      "ZELDA was designed and showcased in Tiruchirappalli (Trichy), Tamil Nadu, India, and is built to deploy for institutions, campuses, workplaces and city safety programs anywhere in India. Contact ZYRA to partner or pilot it in your city.",
+      "ZELDA was designed and showcased in Tiruchirappalli (Trichy), Tamil Nadu, India, and is built to deploy for institutions, campuses, workplaces and city safety programs anywhere in India. Contact ZyraTec to partner or pilot it in your city.",
     ],
     [
       "How is ZELDA different from a normal panic-button or helpline call?",
@@ -65,7 +65,7 @@ export default function ProductsPage() {
     ],
     [
       "Who built ZELDA?",
-      "ZELDA was designed and engineered by ZYRA Technologies, a software company in Trichy, India — led by founder Bragatheesh V and CTO Abdul Javid J — and publicly demonstrated at Thinamalar 'Vali Kaati' in March 2026 to around 200 attendees.",
+      "ZELDA was designed and engineered by ZyraTec, a software company in Trichy, India — led by founder Bragatheesh V and CTO Abdul Javid J — and publicly demonstrated at Thinamalar 'Vali Kaati' in March 2026 to around 200 attendees.",
     ],
   ];
 
@@ -76,7 +76,7 @@ export default function ProductsPage() {
     applicationCategory: "SafetyApplication",
     operatingSystem: "Android, iOS, Web",
     offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
-    author: { "@type": "Organization", name: "ZYRA Technologies", url: SITE_URL },
+    author: { "@type": "Organization", name: "ZyraTec", url: SITE_URL },
     description:
       "ZELDA is a women safety app in India with one-tap SOS, cancellation guard, live GPS tracking, automatic evidence recording and a real-time police dashboard.",
   };
@@ -97,7 +97,7 @@ export default function ProductsPage() {
       <PageHero
         eyebrow="Products · Women Safety App India"
         title="ZELDA — Women Safety App with SOS, Live GPS & Emergency Alerts"
-        desc="ZELDA by ZYRA Technologies (Trichy, India) is a women safety emergency response system — one-tap SOS, live location streaming, automatic evidence recording and a real-time police dashboard."
+        desc="ZELDA by ZyraTec (Trichy, India) is a women safety emergency response system — one-tap SOS, live location streaming, automatic evidence recording and a real-time police dashboard."
       />
       <section className="border-t border-line">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
@@ -174,7 +174,7 @@ export default function ProductsPage() {
                   evidence automatically.
                 </p>
                 <p>
-                  Built by ZYRA Technologies, a software company in Trichy, Tamil Nadu,
+                  Built by ZyraTec, a software company in Trichy, Tamil Nadu,
                   ZELDA connects the person seeking help with the people who can give it —
                   police and authorized personnel watching one real-time dashboard. From
                   campuses and workplaces to city safety programs across India, ZELDA turns

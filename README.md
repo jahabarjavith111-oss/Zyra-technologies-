@@ -1,4 +1,4 @@
-# ZYRA Technologies — Website
+# ZyraTec — Website
 
 Next.js 16 + Tailwind CSS 4. Dark premium tech theme.
 

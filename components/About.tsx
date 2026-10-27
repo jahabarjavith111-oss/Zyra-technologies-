@@ -14,7 +14,7 @@ export default function About() {
     <section id="story" className="border-t border-line">
       <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28">
         <Reveal>
-          <p className="eyebrow">About ZYRA</p>
+          <p className="eyebrow">About ZyraTec</p>
           <h2 className="section-head mt-4 font-display text-3xl font-bold tracking-tight sm:text-4xl">
             Who We Are
           </h2>
@@ -24,7 +24,7 @@ export default function About() {
             <div className="card-ring h-full rounded-2xl p-8">
               <div className="text-[12px] font-semibold tracking-[0.24em] text-accent">OUR STORY</div>
               <p className="mt-4 text-[15px] leading-7 text-muted">
-                ZYRA started with a simple belief — that intelligent technology
+                ZyraTec started with a simple belief — that intelligent technology
                 should be engineered, not improvised. We&apos;re building a team
                 and a portfolio around that discipline.
               </p>

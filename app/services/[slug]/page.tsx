@@ -30,10 +30,10 @@ const SERVICE_KEYWORDS: Record<string, string> = {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const s = SERVICES.find((x) => x.slug === slug);
-  if (!s) return { title: "Service — ZYRA Technologies" };
+  if (!s) return { title: "Service — ZyraTec" };
   const path = `/services/${s.slug}`;
-  const title = `${s.title} Services in India — ${s.tagline} | ZYRA Technologies`;
-  const description = `${s.title} by ZYRA Technologies, software company in Trichy, India. ${s.desc}`;
+  const title = `${s.title} Services in India — ${s.tagline} | ZyraTec`;
+  const description = `${s.title} by ZyraTec, software company in Trichy, India. ${s.desc}`;
   return {
     title,
     description,
@@ -43,9 +43,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title,
       description,
       url: canonical(path),
-      siteName: "ZYRA Technologies",
+      siteName: "ZyraTec",
       type: "article",
-      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${s.title} — ZYRA Technologies` }],
+      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${s.title} — ZyraTec` }],
     },
     twitter: {
       card: "summary_large_image" as const,
@@ -65,11 +65,11 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: `${s.title} — ZYRA Technologies`,
+    name: `${s.title} — ZyraTec`,
     description: `${s.desc} ${s.tagline}`,
     provider: {
       "@type": "Organization",
-      name: "ZYRA Technologies",
+      name: "ZyraTec",
       url: SITE_URL,
     },
     areaServed: ["Tiruchirappalli", "Tamil Nadu", "India", "Worldwide"],
@@ -104,7 +104,7 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
                 <h2 className="font-display text-xl font-bold">Overview</h2>
                 <p className="mt-3 text-[15.5px] leading-8 text-muted">{s.desc}</p>
                 <p className="mt-4 text-[15px] leading-8 text-muted">
-                  Delivered by ZYRA Technologies — a software company in Trichy, Tamil Nadu
+                  Delivered by ZyraTec — a software company in Trichy, Tamil Nadu
                   serving clients across India and worldwide. Every {s.title.toLowerCase()}{" "}
                   engagement is scoped to outcomes, built for production, and backed by
                   senior engineering review.

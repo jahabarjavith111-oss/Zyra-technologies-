@@ -39,19 +39,14 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/logo.png"
-            alt="ZYRA Technologies logo"
+            alt="ZyraTec logo"
             width={46}
             height={32}
             className="h-8 w-11 rounded-md object-contain"
             priority
           />
-          <span className="leading-none">
-            <span className="block font-display text-[15px] font-bold tracking-[0.18em]">
-              ZYRA
-            </span>
-            <span className="block text-[10px] font-semibold tracking-[0.32em] text-muted">
-              TECHNOLOGIES
-            </span>
+          <span className="font-display text-[15px] font-bold leading-none tracking-[0.18em]">
+            ZyraTec
           </span>
         </Link>
 
@@ -75,7 +70,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3 lg:hidden">
           <span className="font-display text-sm font-bold tracking-[0.2em] sm:hidden">
-            ZYRA
+            ZyraTec
           </span>
           <button
             onClick={() => setOpen(!open)}

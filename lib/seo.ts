@@ -1,8 +1,8 @@
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ||
-  "https://zyra-technologies.vercel.app";
+  "https://zyratec.vercel.app";
 
-export const SITE_NAME = "ZYRA Technologies";
+export const SITE_NAME = "ZyraTec";
 export const OG_IMAGE = `${SITE_URL}/opengraph-image`;
 export const LOGO_URL = `${SITE_URL}/logo.png`;
 
@@ -31,13 +31,12 @@ export type PageSeo = {
 
 export const PAGE_SEO: Record<string, PageSeo> = {
   home: {
-    title: "ZYRA Technologies | Software, AI & Women Safety App Company in India",
+    title: "ZyraTec | Software, AI & Women Safety App Company in India",
     description:
-      "ZYRA Technologies is a software company in Trichy, India building AI development, enterprise software, data, cloud, cybersecurity solutions and ZELDA women safety app.",
+      "ZyraTec is a software company in Trichy, India building AI development, enterprise software, data, cloud, cybersecurity solutions and ZELDA women safety app.",
     keywords: [
-      "ZYRA Technologies",
-      "zyra",
-      "zyratech",
+      "ZyraTec",
+      "zyratec",
       "software company Trichy",
       "software company India",
       "AI development company India",
@@ -48,16 +47,16 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     path: "/",
   },
   about: {
-    title: "About ZYRA Technologies — Software Company in Trichy, India",
+    title: "About ZyraTec — Software Company in Trichy, India",
     description:
-      "Meet ZYRA Technologies: a remote-first software company in Trichy, Tamil Nadu building AI systems, enterprise software and digital products. Vision, mission and values.",
-    keywords: ["ZYRA Technologies", "zyra", "zyratech", "software company Trichy", "about ZYRA"],
+      "Meet ZyraTec: a remote-first software company in Trichy, Tamil Nadu building AI systems, enterprise software and digital products. Vision, mission and values.",
+    keywords: ["ZyraTec", "zyratec", "software company Trichy", "about ZyraTec"],
     path: "/about",
   },
   services: {
-    title: "Software Development Services in India | AI, Data, Cloud, Security — ZYRA",
+    title: "Software Development Services in India | AI, Data, Cloud, Security — ZyraTec",
     description:
-      "Software development services in India: AI & Generative AI, software engineering, data & analytics, cloud & DevOps, cybersecurity and digital products by ZYRA Technologies. Remote-first delivery across India and worldwide.",
+      "Software development services in India: AI & Generative AI, software engineering, data & analytics, cloud & DevOps, cybersecurity and digital products by ZyraTec. Remote-first delivery across India and worldwide.",
     keywords: [
       "software development services India",
       "AI development company India",
@@ -69,9 +68,9 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     path: "/services",
   },
   products: {
-    title: "ZELDA Women Safety App — Panic SOS, Live GPS & Emergency Alerts | ZYRA",
+    title: "ZELDA Women Safety App — Panic SOS, Live GPS & Emergency Alerts | ZyraTec",
     description:
-      "ZELDA by ZYRA is a women safety app in India with one-tap SOS, cancellation guard, live GPS tracking, automatic evidence recording and a real-time police dashboard.",
+      "ZELDA by ZyraTec is a women safety app in India with one-tap SOS, cancellation guard, live GPS tracking, automatic evidence recording and a real-time police dashboard.",
     keywords: [
       "ZELDA women safety app",
       "zelda",
@@ -87,45 +86,45 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     path: "/products",
   },
   solutions: {
-    title: "Business Technology Solutions — AI Automation, Data, Cloud | ZYRA India",
+    title: "Business Technology Solutions — AI Automation, Data, Cloud | ZyraTec India",
     description:
       "Packaged technology solutions: intelligent automation, AI transformation, enterprise software, data intelligence, cloud transformation and digital security.",
     keywords: ["intelligent automation India", "AI transformation", "enterprise software India"],
     path: "/solutions",
   },
   technology: {
-    title: "Our Technology Stack — AI, Java, React, Cloud, Data | ZYRA Technologies",
+    title: "Our Technology Stack — AI, Java, React, Cloud, Data | ZyraTec",
     description:
-      "ZYRA's technology ecosystem: Generative AI, LLMs, Java, Spring Boot, React, Node.js, Python, AWS, MySQL, PostgreSQL and MongoDB — proven in production.",
-    keywords: ["AI tech stack", "software technology stack", "ZYRA technology"],
+      "ZyraTec's technology ecosystem: Generative AI, LLMs, Java, Spring Boot, React, Node.js, Python, AWS, MySQL, PostgreSQL and MongoDB — proven in production.",
+    keywords: ["AI tech stack", "software technology stack", "ZyraTec technology"],
     path: "/technology",
   },
   "case-studies": {
-    title: "Case Studies — ZELDA Women Safety System & Enterprise Work | ZYRA",
+    title: "Case Studies — ZELDA Women Safety System & Enterprise Work | ZyraTec",
     description:
-      "Selected work by ZYRA Technologies: ZELDA women safety emergency response system, enterprise data platform and AI support copilot. Problem, solution, impact.",
-    keywords: ["ZELDA case study", "women safety app case study", "ZYRA work"],
+      "Selected work by ZyraTec: ZELDA women safety emergency response system, enterprise data platform and AI support copilot. Problem, solution, impact.",
+    keywords: ["ZELDA case study", "women safety app case study", "ZyraTec work"],
     path: "/case-studies",
   },
   leadership: {
-    title: "Leadership — Founders of ZYRA Technologies, Trichy | Bragatheesh & Abdul Javid",
+    title: "Leadership — Founders of ZyraTec, Trichy | Bragatheesh & Abdul Javid",
     description:
-      "Meet the founders building ZYRA Technologies in Trichy: Bragatheesh V (CEO — vision, business, operations) and Abdul Javid J (CTO — AI, engineering, architecture).",
-    keywords: ["ZYRA founders", "Bragatheesh ZYRA", "Abdul Javid ZYRA"],
+      "Meet the founders building ZyraTec in Trichy: Bragatheesh V (CEO — vision, business, operations) and Abdul Javid J (CTO — AI, engineering, architecture).",
+    keywords: ["ZyraTec founders", "Bragatheesh ZyraTec", "Abdul Javid ZyraTec"],
     path: "/leadership",
   },
   careers: {
-    title: "Careers at ZYRA — AI, Software, Data & Cloud Jobs in India (Remote)",
+    title: "Careers at ZyraTec — AI, Software, Data & Cloud Jobs in India (Remote)",
     description:
-      "Join ZYRA Technologies: open roles for full-stack engineers, AI engineers, data engineers, product designers and cloud engineers. Remote-first, based in Trichy, India.",
-    keywords: ["ZYRA careers", "software jobs Trichy", "AI engineer jobs India remote"],
+      "Join ZyraTec: open roles for full-stack engineers, AI engineers, data engineers, product designers and cloud engineers. Remote-first, based in Trichy, India.",
+    keywords: ["ZyraTec careers", "software jobs Trichy", "AI engineer jobs India remote"],
     path: "/careers",
   },
   contact: {
-    title: "Contact ZYRA — Start Your Software / AI Project | Trichy, India",
+    title: "Contact ZyraTec — Start Your Software / AI Project | Trichy, India",
     description:
-      "Contact ZYRA Technologies in Trichy, India for software development, AI development or women safety tech. We reply within 2 business days.",
-    keywords: ["contact ZYRA", "software company contact Trichy", "AI development enquiry India"],
+      "Contact ZyraTec in Trichy, India for software development, AI development or women safety tech. We reply within 2 business days.",
+    keywords: ["contact ZyraTec", "software company contact Trichy", "AI development enquiry India"],
     path: "/contact",
   },
 };

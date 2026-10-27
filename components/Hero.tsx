@@ -50,7 +50,7 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-4xl px-5 pb-24 pt-16 text-center sm:px-8 lg:pb-32 lg:pt-24">
         <p className="anim-rise eyebrow" style={{ animationDelay: "60ms" }}>
-          ZYRA Technologies
+          ZyraTec
         </p>
         <h1
           className="anim-rise section-head mt-5 font-display text-[clamp(2.6rem,6.2vw,4.9rem)] font-bold leading-[1.02] tracking-tight text-balance"
@@ -79,7 +79,7 @@ export default function Hero() {
             href="#capabilities"
             className="rounded-full bg-ink px-7 py-3.5 text-[15px] font-semibold text-paper transition-transform hover:-translate-y-0.5 hover:opacity-85"
           >
-            Explore ZYRA
+            Explore ZyraTec
           </Link>
           <Link
             href="#contact"

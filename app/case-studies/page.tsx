@@ -15,7 +15,7 @@ export const metadata = {
     title: PAGE_SEO["case-studies"].title,
     description: PAGE_SEO["case-studies"].description,
     url: canonical(PAGE_SEO["case-studies"].path),
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "ZYRA case studies" }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "ZyraTec case studies" }],
   },
   twitter: {
     card: "summary_large_image" as const,
@@ -31,7 +31,7 @@ export default function CaseStudiesPage() {
       <PageHero
         eyebrow="Case Studies"
         title="Selected Work"
-        desc="Problem → solution → technology → impact. How ZYRA engineers outcomes."
+        desc="Problem → solution → technology → impact. How ZyraTec engineers outcomes."
       />
       <section className="border-t border-line">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">

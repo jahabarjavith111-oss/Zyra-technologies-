@@ -15,10 +15,10 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const m = TEAM.find((x) => x.slug === slug);
-  if (!m) return { title: "Leadership — ZYRA Technologies" };
+  if (!m) return { title: "Leadership — ZyraTec" };
   const path = `/leadership/${m.slug}`;
-  const title = `${m.name} — ${m.role}, ZYRA Technologies Trichy`;
-  const description = `${m.name}, ${m.role} at ZYRA Technologies (Trichy, India). ${m.bio}`;
+  const title = `${m.name} — ${m.role}, ZyraTec Trichy`;
+  const description = `${m.name}, ${m.role} at ZyraTec (Trichy, India). ${m.bio}`;
   return {
     title,
     description,
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title,
       description,
       url: canonical(path),
-      siteName: "ZYRA Technologies",
+      siteName: "ZyraTec",
       type: "profile",
       images: [{ url: m.photo.startsWith("http") ? m.photo : `${SITE_URL}${m.photo}`, alt: m.name }],
     },
@@ -63,7 +63,7 @@ export default async function MemberDetail({ params }: { params: Promise<{ slug:
           image: m.photo.startsWith("http") ? m.photo : `${SITE_URL}${m.photo}`,
           worksFor: {
             "@type": "Organization",
-            name: "ZYRA Technologies",
+            name: "ZyraTec",
             url: SITE_URL,
           },
           url: canonical(`/leadership/${m.slug}`),

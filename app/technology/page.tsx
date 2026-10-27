@@ -22,7 +22,7 @@ export const metadata = {
     title: PAGE_SEO.technology.title,
     description: PAGE_SEO.technology.description,
     url: canonical(PAGE_SEO.technology.path),
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "ZYRA technology stack" }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "ZyraTec technology stack" }],
   },
   twitter: {
     card: "summary_large_image" as const,

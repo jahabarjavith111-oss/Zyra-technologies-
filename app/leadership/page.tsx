@@ -14,7 +14,7 @@ export const metadata = {
     title: PAGE_SEO.leadership.title,
     description: PAGE_SEO.leadership.description,
     url: canonical(PAGE_SEO.leadership.path),
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "ZYRA Technologies leadership" }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "ZyraTec leadership" }],
   },
   twitter: {
     card: "summary_large_image" as const,
@@ -29,7 +29,7 @@ export default function LeadershipPage() {
     <main>
       <PageHero
         eyebrow="Leadership"
-        title="The people building ZYRA."
+        title="The people building ZyraTec."
         desc="Two founders — one driving vision, business and operations, the other driving technology, AI and engineering — converging on future products and solutions."
       />
       <Leadership />
@@ -59,7 +59,7 @@ export default function LeadershipPage() {
               <div className="mx-auto my-4 h-8 w-px bg-gradient-to-b from-accent/60 to-accent/10" />
               <div className="mx-auto max-w-md rounded-xl border border-accent/40 bg-accent-soft p-5">
                 <div className="font-display text-[15px] font-bold tracking-[0.18em]">
-                  ZYRA TECHNOLOGIES
+                  ZyraTec
                 </div>
                 <p className="mt-1 text-[13px] text-muted">
                   Future Products &amp; Solutions

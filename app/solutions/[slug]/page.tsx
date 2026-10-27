@@ -15,10 +15,10 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const s = SOLUTIONS.find((x) => x.slug === slug);
-  if (!s) return { title: "Solution — ZYRA Technologies" };
+  if (!s) return { title: "Solution — ZyraTec" };
   const path = `/solutions/${s.slug}`;
-  const title = `${s.title} for Businesses in India — ${s.tagline} | ZYRA Technologies`;
-  const description = `${s.title} by ZYRA Technologies, Trichy, India. ${s.desc}`;
+  const title = `${s.title} for Businesses in India — ${s.tagline} | ZyraTec`;
+  const description = `${s.title} by ZyraTec, Trichy, India. ${s.desc}`;
   return {
     title,
     description,
@@ -27,9 +27,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title,
       description,
       url: canonical(path),
-      siteName: "ZYRA Technologies",
+      siteName: "ZyraTec",
       type: "article",
-      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${s.title} — ZYRA Technologies` }],
+      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${s.title} — ZyraTec` }],
     },
     twitter: {
       card: "summary_large_image" as const,

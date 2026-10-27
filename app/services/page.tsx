@@ -15,7 +15,7 @@ export const metadata = {
     title: PAGE_SEO.services.title,
     description: PAGE_SEO.services.description,
     url: canonical(PAGE_SEO.services.path),
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "ZYRA software development services" }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "ZyraTec software development services" }],
   },
   twitter: {
     card: "summary_large_image" as const,
@@ -30,7 +30,7 @@ export default function ServicesPage() {
     <main>
       <PageHero
         eyebrow="Services"
-        title="What ZYRA Does"
+        title="What ZyraTec Does"
         desc="Six engineering disciplines, one integrated team — scoped to outcomes, built for production."
       />
       <section className="border-t border-line">

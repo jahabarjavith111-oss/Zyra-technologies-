@@ -17,14 +17,14 @@ export const TEAM: Member[] = [
     name: "BRAGATHEESH V",
     role: "Founder & CEO",
     focus: "Vision & Strategy · Business · Partnerships · Operations",
-    bio: "Sets ZYRA's direction — which problems we solve, which markets we enter, and what excellence looks like. Owns vision and strategy, business growth, partnerships and operations.",
+    bio: "Sets ZyraTec's direction — which problems we solve, which markets we enter, and what excellence looks like. Owns vision and strategy, business growth, partnerships and operations.",
     owns: ["Vision & Strategy", "Business", "Partnerships", "Operations"],
     photo: "/team/bragatheesh-v.png",
     contributions: [
-      "Founded ZYRA Technologies and defined its vision — engineering intelligence, building what's next.",
+      "Founded ZyraTec and defined its vision — engineering intelligence, building what's next.",
       "Turned the Zelda women-safety concept into a shipped system, from idea to public showcase.",
       "Led partnerships and outreach, including Zelda's demonstration at Thinamalar 'Vali Kaati' to ~200 attendees.",
-      "Built ZYRA as a remote-first company headquartered in Ammapettai, Trichy.",
+      "Built ZyraTec as a remote-first company headquartered in Ammapettai, Trichy.",
     ],
   },
   {
@@ -37,10 +37,10 @@ export const TEAM: Member[] = [
     owns: ["Technology", "AI & GenAI", "Engineering", "Architecture"],
     photo: "/team/abdul-javid-j.png",
     contributions: [
-      "Co-founded ZYRA Technologies and owns its entire technical direction.",
+      "Co-founded ZyraTec and owns its entire technical direction.",
       "Architected the Zelda emergency response system — Flutter app, police dashboard, and real-time backend.",
       "Designed Zelda's live GPS streaming, evidence pipeline and Socket.IO event architecture.",
-      "Set ZYRA's engineering bar: reviewed code, tested systems and disciplined delivery.",
+      "Set ZyraTec's engineering bar: reviewed code, tested systems and disciplined delivery.",
     ],
   },
   {
@@ -49,7 +49,7 @@ export const TEAM: Member[] = [
     name: "CINDHUJA B",
     role: "Chief Marketing Officer (CMO)",
     focus: "Marketing & Branding · Digital Marketing · Content & Social Media · Brand Growth & Outreach",
-    bio: "Owns ZYRA Technologies' brand presence and marketing strategy — brand identity, digital marketing, content creation, audience engagement and growth across every project and product.",
+    bio: "Owns ZyraTec' brand presence and marketing strategy — brand identity, digital marketing, content creation, audience engagement and growth across every project and product.",
     owns: [
       "Marketing & Branding",
       "Digital Marketing",
@@ -58,11 +58,11 @@ export const TEAM: Member[] = [
     ],
     photo: "/team/cindhuja-b.png",
     contributions: [
-      "Leads ZYRA Technologies' marketing strategy and brand positioning.",
+      "Leads ZyraTec' marketing strategy and brand positioning.",
       "Builds a consistent brand identity across the company's website, social media and digital platforms.",
       "Develops marketing campaigns and engaging content to increase brand awareness and audience reach.",
       "Drives client outreach, networking and partnership opportunities to support business growth.",
-      "Strengthens ZYRA's market presence by promoting its products, projects and technology solutions.",
+      "Strengthens ZyraTec's market presence by promoting its products, projects and technology solutions.",
     ],
   },
 ];
@@ -92,7 +92,7 @@ export const CASES: Case[] = [
     problem:
       "In an emergency, the delay between distress and coordinated help costs critical minutes — a phone call alone gives authorities a single static report with no live context.",
     solution:
-      "ZYRA built ZELDA: a mobile app for users plus a web dashboard for police. SOS with a cancellation window, countdown with automatic video evidence recording, live GPS streaming, and real-time case delivery to a centralized dashboard.",
+      "ZyraTec built ZELDA: a mobile app for users plus a web dashboard for police. SOS with a cancellation window, countdown with automatic video evidence recording, live GPS streaming, and real-time case delivery to a centralized dashboard.",
     technology:
       "Flutter app (Dio, Geolocator, Camera), React + Vite + Tailwind police dashboard, Node.js + Express API with JWT auth, MySQL, and Socket.IO for real-time case and location events.",
     impact:
@@ -127,7 +127,7 @@ export const CASES: Case[] = [
     problem:
       "Reporting ran on spreadsheets and tribal knowledge — numbers disagreed between teams and nobody trusted the dashboard.",
     solution:
-      "ZYRA would design a governed data foundation: modeled pipelines, a tested warehouse layer, and a small set of executive dashboards with defined metric ownership.",
+      "ZyraTec would design a governed data foundation: modeled pipelines, a tested warehouse layer, and a small set of executive dashboards with defined metric ownership.",
     technology:
       "Modeled ELT pipelines, warehouse with tests and docs, BI semantic layer, and access controls with audit logging.",
     impact:
@@ -161,7 +161,7 @@ export const CASES: Case[] = [
     problem:
       "Support teams answered the same questions from scattered docs — slow responses, inconsistent answers, and no learning loop.",
     solution:
-      "ZYRA would ship a grounded copilot: retrieval over the team's real docs, cited answers, human approval before sending, and evals tracking answer quality weekly.",
+      "ZyraTec would ship a grounded copilot: retrieval over the team's real docs, cited answers, human approval before sending, and evals tracking answer quality weekly.",
     technology:
       "RAG over curated sources, citation enforcement, human-in-the-loop review queue, and an eval harness with guardrails.",
     impact:

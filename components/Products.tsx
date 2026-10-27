@@ -10,7 +10,7 @@ export default function Products() {
         <Reveal>
           <p className="eyebrow">Products</p>
           <h2 className="section-head mt-4 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-            Products Built by ZYRA
+            Products Built by ZyraTec
           </h2>
           <p className="mt-4 max-w-2xl text-[16px] leading-7 text-muted">
             We&apos;re not only a services company — we design and ship our own

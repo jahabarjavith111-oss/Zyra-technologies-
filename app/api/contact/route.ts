@@ -72,7 +72,7 @@ export async function POST(req: Request) {
   const gmailUser = process.env.GMAIL_USER;
   const gmailPass = (process.env.GMAIL_APP_PASSWORD || "").replace(/\s+/g, "");
   const toEmail = process.env.CONTACT_TO_EMAIL || "Zyracmt@gmail.com";
-  const fromName = process.env.CONTACT_FROM_NAME || "ZYRA Technologies";
+  const fromName = process.env.CONTACT_FROM_NAME || "ZyraTec";
 
   if (!gmailUser || !gmailPass) {
     console.error("Contact API misconfigured: GMAIL_USER / GMAIL_APP_PASSWORD missing.");
