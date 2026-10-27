@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
-import { SITE_URL, SITE_NAME, OG_IMAGE, CONTACT_EMAIL, CONTACT_PHONES, ADDRESS } from "@/lib/seo";
+import { SITE_URL, SITE_NAME, OG_IMAGE, CONTACT_EMAIL, CONTACT_PHONES, ADDRESS, LINKEDIN_URL } from "@/lib/seo";
 
 const display = Space_Grotesk({
   variable: "--font-display",
@@ -145,7 +145,7 @@ const organizationSchema = {
         addressCountry: ADDRESS.country,
       },
       areaServed: ["Tiruchirappalli", "Tamil Nadu", "India", "Worldwide"],
-      sameAs: [] as string[],
+      sameAs: [LINKEDIN_URL],
     },
     {
       "@type": "ProfessionalService",

@@ -6,7 +6,9 @@ export default function robots(): MetadataRoute.Robots {
     "https://zyratec.vercel.app";
 
   return {
-    rules: [{ userAgent: "*", allow: "/" }],
+    rules: [
+      { userAgent: "*", allow: "/", disallow: ["/api/"] },
+    ],
     sitemap: `${SITE_URL}/sitemap.xml`,
   };
 }

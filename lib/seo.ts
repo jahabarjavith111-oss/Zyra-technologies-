@@ -8,6 +8,10 @@ export const LOGO_URL = `${SITE_URL}/logo.png`;
 
 export const CONTACT_EMAIL = "zyracmt@gmail.com";
 export const CONTACT_PHONES = ["+91 88079 84687", "+91 93459 92521"];
+
+/** Social profiles — used for footer/contact links and Organization sameAs. */
+export const LINKEDIN_URL = "https://www.linkedin.com/in/zelda-undefined-5b825343a";
+export const SOCIAL_LINKS = [{ label: "LinkedIn", url: LINKEDIN_URL }] as const;
 export const ADDRESS = {
   street: "Ammapettai",
   city: "Tiruchirappalli (Trichy)",
@@ -54,7 +58,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     path: "/about",
   },
   services: {
-    title: "Software Development Services in India | AI, Data, Cloud, Security — ZyraTec",
+    title: "Software Development Services India | AI, Data, Cloud — ZyraTec",
     description:
       "Software development services in India: AI & Generative AI, software engineering, data & analytics, cloud & DevOps, cybersecurity and digital products by ZyraTec. Remote-first delivery across India and worldwide.",
     keywords: [
@@ -68,7 +72,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     path: "/services",
   },
   products: {
-    title: "ZELDA Women Safety App — Panic SOS, Live GPS & Emergency Alerts | ZyraTec",
+    title: "ZELDA Women Safety App — SOS, Live GPS & Alerts | ZyraTec",
     description:
       "ZELDA by ZyraTec is a women safety app in India with one-tap SOS, cancellation guard, live GPS tracking, automatic evidence recording and a real-time police dashboard.",
     keywords: [
@@ -86,42 +90,42 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     path: "/products",
   },
   solutions: {
-    title: "Business Technology Solutions — AI Automation, Data, Cloud | ZyraTec India",
+    title: "Business Technology Solutions — AI, Automation, Cloud | ZyraTec",
     description:
       "Packaged technology solutions: intelligent automation, AI transformation, enterprise software, data intelligence, cloud transformation and digital security.",
     keywords: ["intelligent automation India", "AI transformation", "enterprise software India"],
     path: "/solutions",
   },
   technology: {
-    title: "Our Technology Stack — AI, Java, React, Cloud, Data | ZyraTec",
+    title: "Our Technology Stack — AI, Java, React, Cloud | ZyraTec",
     description:
       "ZyraTec's technology ecosystem: Generative AI, LLMs, Java, Spring Boot, React, Node.js, Python, AWS, MySQL, PostgreSQL and MongoDB — proven in production.",
     keywords: ["AI tech stack", "software technology stack", "ZyraTec technology"],
     path: "/technology",
   },
   "case-studies": {
-    title: "Case Studies — ZELDA Women Safety System & Enterprise Work | ZyraTec",
+    title: "Case Studies — ZELDA & Enterprise Work | ZyraTec",
     description:
       "Selected work by ZyraTec: ZELDA women safety emergency response system, enterprise data platform and AI support copilot. Problem, solution, impact.",
     keywords: ["ZELDA case study", "women safety app case study", "ZyraTec work"],
     path: "/case-studies",
   },
   leadership: {
-    title: "Leadership — Founders of ZyraTec, Trichy | Bragatheesh & Abdul Javid",
+    title: "Leadership — ZyraTec Founders, Trichy | CEO & CTO",
     description:
       "Meet the founders building ZyraTec in Trichy: Bragatheesh V (CEO — vision, business, operations) and Abdul Javid J (CTO — AI, engineering, architecture).",
     keywords: ["ZyraTec founders", "Bragatheesh ZyraTec", "Abdul Javid ZyraTec"],
     path: "/leadership",
   },
   careers: {
-    title: "Careers at ZyraTec — AI, Software, Data & Cloud Jobs in India (Remote)",
+    title: "Careers at ZyraTec — AI, Software & Data Jobs (Remote)",
     description:
       "Join ZyraTec: open roles for full-stack engineers, AI engineers, data engineers, product designers and cloud engineers. Remote-first, based in Trichy, India.",
     keywords: ["ZyraTec careers", "software jobs Trichy", "AI engineer jobs India remote"],
     path: "/careers",
   },
   contact: {
-    title: "Contact ZyraTec — Start Your Software / AI Project | Trichy, India",
+    title: "Contact ZyraTec — Start Your Software / AI Project",
     description:
       "Contact ZyraTec in Trichy, India for software development, AI development or women safety tech. We reply within 2 business days.",
     keywords: ["contact ZyraTec", "software company contact Trichy", "AI development enquiry India"],
