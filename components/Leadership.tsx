@@ -1,15 +1,11 @@
 import Link from "next/link";
 import Reveal from "./Reveal";
 import PhotoFrame from "./PhotoFrame";
-import { TEAM, Member } from "@/lib/company";
+import { TEAM, type Member } from "@/lib/company";
 
-export default function Leadership() {
-  const founder = TEAM.find((m) => m.slug === "bragatheesh-v")!;
-  const cofounder = TEAM.find((m) => m.slug === "abdul-javid-j")!;
-  const cmo = TEAM.find((m) => m.slug === "cindhuja-b")!;
-
-  const MemberCard = ({ member, index }: { member: typeof founder; index: number }) => (
-    <Reveal key={member.slug} delay={index * 90}>
+function MemberCard({ member, index }: { member: Member; index: number }) {
+  return (
+    <Reveal delay={index * 90}>
       <Link
         href={`/leadership/${member.slug}`}
         className="card-ring group relative block h-full overflow-hidden rounded-2xl p-7 transition-all hover:-translate-y-1"
@@ -32,6 +28,13 @@ export default function Leadership() {
       </Link>
     </Reveal>
   );
+}
+
+export default function Leadership() {
+  const founder = TEAM.find((m) => m.slug === "bragatheesh-v")!;
+  const cofounder = TEAM.find((m) => m.slug === "abdul-javid-j")!;
+  const cmo = TEAM.find((m) => m.slug === "cindhuja-b")!;
+  const chro = TEAM.find((m) => m.slug === "dharshini")!;
 
   return (
     <section id="leadership" className="border-t border-line bg-paper-2/40">
@@ -50,14 +53,11 @@ export default function Leadership() {
             {cofounder && <MemberCard member={cofounder} index={1} />}
           </div>
 
-          {/* Bottom row: CMO centered */}
-          {cmo && (
-            <div className="mt-6 flex justify-center">
-              <div className="w-full max-w-xs sm:max-w-sm">
-                <MemberCard member={cmo} index={2} />
-              </div>
-            </div>
-          )}
+          {/* Bottom row: CMO & CHRO side by side */}
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            {cmo && <MemberCard member={cmo} index={2} />}
+            {chro && <MemberCard member={chro} index={3} />}
+          </div>
         </div>
       </div>
     </section>

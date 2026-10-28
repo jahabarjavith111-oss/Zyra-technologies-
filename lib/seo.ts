@@ -111,10 +111,10 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     path: "/case-studies",
   },
   leadership: {
-    title: "Leadership — ZyraTec Founders, Trichy | CEO & CTO",
+    title: "Leadership — ZyraTec Team, Trichy | CEO, CTO, CMO & CHRO",
     description:
-      "Meet the founders building ZyraTec in Trichy: Bragatheesh V (CEO — vision, business, operations) and Abdul Javid J (CTO — AI, engineering, architecture).",
-    keywords: ["ZyraTec founders", "Bragatheesh ZyraTec", "Abdul Javid ZyraTec"],
+      "Meet ZyraTec's leadership in Trichy: Bragatheesh V (CEO), Abdul Javid J (CTO), Cindhuja B (CMO) and Dharshini (CHRO) — vision, technology, marketing and people.",
+    keywords: ["ZyraTec leadership", "Bragatheesh ZyraTec", "Abdul Javid ZyraTec", "Cindhuja ZyraTec", "Dharshini ZyraTec"],
     path: "/leadership",
   },
   careers: {

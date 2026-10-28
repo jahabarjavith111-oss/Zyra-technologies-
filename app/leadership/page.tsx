@@ -30,7 +30,7 @@ export default function LeadershipPage() {
       <PageHero
         eyebrow="Leadership"
         title="The people building ZyraTec."
-        desc="Two founders — one driving vision, business and operations, the other driving technology, AI and engineering — converging on future products and solutions."
+        desc="A leadership team spanning vision, technology, marketing and people — converging on future products and solutions."
       />
       <Leadership />
       <section className="border-t border-line">
