@@ -68,7 +68,7 @@ export const TEAM: Member[] = [
   {
     slug: "dharshini",
     n: "04",
-    name: "DHARSHINI",
+    name: "DHARSHINI S",
     role: "Chief Human Resources Officer (CHRO)",
     focus: "Human Resources Strategy · Talent Acquisition · Employee Engagement · People Operations",
     bio: "Leads ZyraTec's human resources strategy and people operations — talent acquisition, employee engagement, performance management, organizational development and workplace culture.",

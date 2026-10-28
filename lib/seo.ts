@@ -113,8 +113,8 @@ export const PAGE_SEO: Record<string, PageSeo> = {
   leadership: {
     title: "Leadership — ZyraTec Team, Trichy | CEO, CTO, CMO & CHRO",
     description:
-      "Meet ZyraTec's leadership in Trichy: Bragatheesh V (CEO), Abdul Javid J (CTO), Cindhuja B (CMO) and Dharshini (CHRO) — vision, technology, marketing and people.",
-    keywords: ["ZyraTec leadership", "Bragatheesh ZyraTec", "Abdul Javid ZyraTec", "Cindhuja ZyraTec", "Dharshini ZyraTec"],
+      "Meet ZyraTec's leadership in Trichy: Bragatheesh V (CEO), Abdul Javid J (CTO), Cindhuja B (CMO) and Dharshini S (CHRO) — vision, technology, marketing and people.",
+    keywords: ["ZyraTec leadership", "Bragatheesh ZyraTec", "Abdul Javid ZyraTec", "Cindhuja ZyraTec", "Dharshini S ZyraTec"],
     path: "/leadership",
   },
   careers: {
