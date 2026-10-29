@@ -128,6 +128,7 @@ const organizationSchema = {
       "@type": "Organization",
       "@id": `${SITE_URL}/#organization`,
       name: SITE_NAME,
+      alternateName: ["ZyraTec AI", "ZyraTec Trichy", "ZyraTec Technologies"],
       url: SITE_URL,
       logo: {
         "@type": "ImageObject",
@@ -163,6 +164,7 @@ const organizationSchema = {
       "@type": "ProfessionalService",
       "@id": `${SITE_URL}/#service`,
       name: SITE_NAME,
+      alternateName: ["ZyraTec AI", "ZyraTec Trichy"],
       url: SITE_URL,
       image: OG_IMAGE,
       priceRange: "₹₹",
