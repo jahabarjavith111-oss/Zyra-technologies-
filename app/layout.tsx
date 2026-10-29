@@ -176,6 +176,7 @@ const organizationSchema = {
       "@id": `${SITE_URL}/#website`,
       url: SITE_URL,
       name: SITE_NAME,
+      alternateName: "ZyraTec AI",
       publisher: { "@id": `${SITE_URL}/#organization` },
       inLanguage: "en-IN",
     },
