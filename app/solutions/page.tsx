@@ -2,9 +2,10 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
+import JsonLd from "@/components/JsonLd";
 import { SOLUTIONS } from "@/lib/offerings";
 
-import { PAGE_SEO, canonical, OG_IMAGE } from "@/lib/seo";
+import { PAGE_SEO, canonical, collectionSchema, OG_IMAGE } from "@/lib/seo";
 
 export const metadata = {
   title: PAGE_SEO.solutions.title,
@@ -28,6 +29,17 @@ export const metadata = {
 export default function SolutionsPage() {
   return (
     <main>
+      <JsonLd
+        data={collectionSchema({
+          name: "Business Technology Solutions",
+          description: PAGE_SEO.solutions.description,
+          path: PAGE_SEO.solutions.path,
+          items: SOLUTIONS.map((s) => ({
+            name: s.title,
+            url: canonical(`/solutions/${s.slug}`),
+          })),
+        })}
+      />
       <PageHero
         eyebrow="Solutions"
         title="Solutions for Modern Businesses"

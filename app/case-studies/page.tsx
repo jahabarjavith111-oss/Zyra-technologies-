@@ -2,9 +2,10 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
+import JsonLd from "@/components/JsonLd";
 import { CASES } from "@/lib/company";
 
-import { PAGE_SEO, canonical, OG_IMAGE } from "@/lib/seo";
+import { PAGE_SEO, canonical, collectionSchema, OG_IMAGE } from "@/lib/seo";
 
 export const metadata = {
   title: PAGE_SEO["case-studies"].title,
@@ -28,6 +29,17 @@ export const metadata = {
 export default function CaseStudiesPage() {
   return (
     <main>
+      <JsonLd
+        data={collectionSchema({
+          name: "ZyraTec Case Studies",
+          description: PAGE_SEO["case-studies"].description,
+          path: PAGE_SEO["case-studies"].path,
+          items: CASES.map((c) => ({
+            name: `${c.title} — ${c.subtitle}`,
+            url: canonical(`/case-studies/${c.slug}`),
+          })),
+        })}
+      />
       <PageHero
         eyebrow="Case Studies"
         title="ZyraTec Case Studies — Software & AI Projects"

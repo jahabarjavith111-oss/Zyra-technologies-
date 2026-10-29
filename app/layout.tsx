@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import { SITE_URL, SITE_NAME, OG_IMAGE, CONTACT_EMAIL, CONTACT_PHONES, ADDRESS, LINKEDIN_URL } from "@/lib/seo";
+import { SERVICES } from "@/lib/offerings";
 
 const display = Space_Grotesk({
   variable: "--font-display",
@@ -160,7 +161,7 @@ const organizationSchema = {
         addressCountry: ADDRESS.country,
       },
       areaServed: ["Tiruchirappalli", "Tamil Nadu", "India", "Worldwide"],
-      sameAs: [LINKEDIN_URL],
+      sameAs: LINKEDIN_URL ? [LINKEDIN_URL] : undefined,
     },
     {
       "@type": "ProfessionalService",
@@ -184,6 +185,19 @@ const organizationSchema = {
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
         opens: "09:00",
         closes: "22:00",
+      },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "ZyraTec services",
+        itemListElement: SERVICES.map((s) => ({
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: s.title,
+            description: s.tagline,
+            url: `${SITE_URL}/services/${s.slug}`,
+          },
+        })),
       },
     },
     {

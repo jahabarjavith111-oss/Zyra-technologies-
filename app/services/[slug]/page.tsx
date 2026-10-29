@@ -7,6 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FaqSection from "@/components/FaqSection";
 import { SERVICES } from "@/lib/offerings";
+import { CASES } from "@/lib/company";
 import { canonical, faqSchema, OG_IMAGE, SITE_URL } from "@/lib/seo";
 
 export function generateStaticParams() {
@@ -61,6 +62,8 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
   const { slug } = await params;
   const s = SERVICES.find((x) => x.slug === slug);
   if (!s) notFound();
+
+  const relatedCase = CASES.find((c) => c.service === s.slug);
 
   const path = `/services/${s.slug}`;
   const serviceSchema = {
@@ -148,6 +151,23 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
       </section>
       {s.faqs && s.faqs.length > 0 && (
         <FaqSection items={s.faqs} title={`${s.title} — frequently asked questions`} />
+      )}
+      {relatedCase && (
+        <section className="border-t border-line">
+          <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8">
+            <p className="eyebrow">Related work</p>
+            <Link
+              href={`/case-studies/${relatedCase.slug}`}
+              className="card-ring group mt-4 block rounded-2xl p-8 transition-all hover:-translate-y-1"
+            >
+              <h2 className="font-display text-xl font-bold tracking-tight">{relatedCase.title}</h2>
+              <p className="mt-2 text-[14.5px] text-muted">{relatedCase.subtitle}</p>
+              <span className="mt-4 inline-block text-[14px] font-semibold text-ink group-hover:text-accent">
+                Read the {relatedCase.title} case study →
+              </span>
+            </Link>
+          </div>
+        </section>
       )}
       <CTABand />
     </main>

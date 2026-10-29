@@ -9,9 +9,16 @@ export const LOGO_URL = `${SITE_URL}/logo.png`;
 export const CONTACT_EMAIL = "zyracmt@gmail.com";
 export const CONTACT_PHONES = ["+91 88079 84687", "+91 93459 92521"];
 
-/** Social profiles — used for footer/contact links and Organization sameAs. */
-export const LINKEDIN_URL = "https://www.linkedin.com/in/zelda-undefined-5b825343a";
-export const SOCIAL_LINKS = [{ label: "LinkedIn", url: LINKEDIN_URL }] as const;
+/**
+ * Social profiles — used for footer/contact links and Organization sameAs.
+ * Leave empty until a real, public profile exists: a dead sameAs hurts entity
+ * signals more than having none, and a 404 outbound link wastes crawl budget.
+ * Set this to the canonical profile URL and links re-appear automatically.
+ */
+export const LINKEDIN_URL = "";
+export const SOCIAL_LINKS = LINKEDIN_URL
+  ? ([{ label: "LinkedIn", url: LINKEDIN_URL }] as const)
+  : ([] as const);
 export const ADDRESS = {
   street: "Ammapettai",
   city: "Tiruchirappalli (Trichy)",
@@ -34,6 +41,39 @@ export type PageSeo = {
 };
 
 export type Faq = { q: string; a: string };
+
+/** CollectionPage + ItemList JSON-LD for listing pages (/services, /case-studies, …). */
+export function collectionSchema({
+  name,
+  description,
+  path,
+  items,
+}: {
+  name: string;
+  description: string;
+  path: string;
+  items: { name: string; url: string }[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${canonical(path)}#collection`,
+    name,
+    description,
+    url: canonical(path),
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: items.length,
+      itemListElement: items.map((item, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: item.name,
+        url: item.url,
+      })),
+    },
+  };
+}
 
 /** FAQPage JSON-LD for visible Q&A sections. */
 export function faqSchema(faqs: Faq[]) {

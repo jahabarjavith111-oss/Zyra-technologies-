@@ -2,9 +2,10 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
+import JsonLd from "@/components/JsonLd";
 import { SERVICES } from "@/lib/offerings";
 
-import { PAGE_SEO, canonical, OG_IMAGE } from "@/lib/seo";
+import { PAGE_SEO, canonical, collectionSchema, OG_IMAGE } from "@/lib/seo";
 
 export const metadata = {
   title: PAGE_SEO.services.title,
@@ -28,6 +29,17 @@ export const metadata = {
 export default function ServicesPage() {
   return (
     <main>
+      <JsonLd
+        data={collectionSchema({
+          name: "Software Development Services",
+          description: PAGE_SEO.services.description,
+          path: PAGE_SEO.services.path,
+          items: SERVICES.map((s) => ({
+            name: s.title,
+            url: canonical(`/services/${s.slug}`),
+          })),
+        })}
+      />
       <PageHero
         eyebrow="Services"
         title="Software Development Services in India"

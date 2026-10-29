@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Reveal from "./Reveal";
+import { LINKEDIN_URL } from "@/lib/seo";
 
 const SERVICES = [
   "AI & Generative AI",
@@ -82,7 +83,10 @@ export default function Contact() {
               <div>
                 <span className="text-[12px] font-semibold tracking-[0.24em] text-faint">SOCIAL</span>
                 <div className="mt-1 flex gap-5 font-medium">
-                  <a href="https://www.linkedin.com/in/zelda-undefined-5b825343a" target="_blank" rel="noreferrer noopener" className="text-ink hover:text-accent">LinkedIn</a>
+                  {LINKEDIN_URL && (
+                    <a href={LINKEDIN_URL} target="_blank" rel="noreferrer noopener" className="text-ink hover:text-accent">LinkedIn</a>
+                  )}
+                  <a href="mailto:zyracmt@gmail.com" className="text-ink hover:text-accent">Email</a>
                 </div>
               </div>
               <div>

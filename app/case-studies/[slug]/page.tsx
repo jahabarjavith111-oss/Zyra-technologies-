@@ -6,6 +6,7 @@ import CTABand from "@/components/CTABand";
 import JsonLd from "@/components/JsonLd";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { CASES } from "@/lib/company";
+import { SERVICES } from "@/lib/offerings";
 import { canonical, OG_IMAGE, SITE_URL } from "@/lib/seo";
 
 export function generateStaticParams() {
@@ -65,6 +66,8 @@ export default async function CaseDetail({ params }: { params: Promise<{ slug: s
   const c = CASES.find((x) => x.slug === slug);
   if (!c) notFound();
 
+  const relatedService = SERVICES.find((s) => s.slug === c.service);
+
   const breadcrumbs = [
     { label: "Home", href: "/" },
     { label: "Case Studies", href: "/case-studies" },
@@ -82,6 +85,15 @@ export default async function CaseDetail({ params }: { params: Promise<{ slug: s
     author: { "@type": "Organization", name: "ZyraTec", url: SITE_URL },
     publisher: { "@type": "Organization", name: "ZyraTec", url: SITE_URL },
     mainEntityOfPage: canonical(`/case-studies/${c.slug}`),
+    ...(relatedService
+      ? {
+          about: {
+            "@type": "Service",
+            name: relatedService.title,
+            url: canonical(`/services/${relatedService.slug}`),
+          },
+        }
+      : {}),
   };
 
   const breadcrumbSchema = {
@@ -127,9 +139,19 @@ export default async function CaseDetail({ params }: { params: Promise<{ slug: s
           </Reveal>
 
           <Reveal delay={120} className="mt-10">
-            <Link href="/contact" className="inline-block rounded-full bg-ink px-7 py-3.5 text-[14.5px] font-semibold text-paper hover:opacity-85">
-              Start a similar project →
-            </Link>
+            <div className="flex flex-wrap items-center gap-4">
+              <Link href="/contact" className="inline-block rounded-full bg-ink px-7 py-3.5 text-[14.5px] font-semibold text-paper hover:opacity-85">
+                Start a similar project →
+              </Link>
+              {relatedService && (
+                <Link
+                  href={`/services/${relatedService.slug}`}
+                  className="text-[14.5px] font-semibold text-ink underline-offset-4 hover:text-accent hover:underline"
+                >
+                  How we deliver {relatedService.title} →
+                </Link>
+              )}
+            </div>
           </Reveal>
         </div>
       </section>

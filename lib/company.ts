@@ -97,6 +97,8 @@ export type Case = {
   title: string;
   subtitle: string;
   stack: string[];
+  /** Slug of the service page this project demonstrates — used for internal linking. */
+  service: string;
   problem: string;
   solution: string;
   technology: string;
@@ -113,6 +115,7 @@ export const CASES: Case[] = [
     title: "ZELDA",
     subtitle: "AI-powered women safety emergency response system",
     stack: ["Flutter", "React", "Node.js", "MySQL", "Socket.IO"],
+    service: "digital-products",
     problem:
       "In an emergency, the delay between distress and coordinated help costs critical minutes — a phone call alone gives authorities a single static report with no live context.",
     solution:
@@ -148,6 +151,7 @@ export const CASES: Case[] = [
     title: "Enterprise Data Platform",
     subtitle: "Pipelines, warehouse and BI that leaders trust",
     stack: ["Data", "Python", "SQL", "Cloud"],
+    service: "data-analytics",
     problem:
       "Reporting ran on spreadsheets and tribal knowledge — numbers disagreed between teams and nobody trusted the dashboard.",
     solution:
@@ -182,6 +186,7 @@ export const CASES: Case[] = [
     title: "AI Support Copilot",
     subtitle: "Grounded answers for customer teams",
     stack: ["LLMs", "RAG", "React", "Cloud"],
+    service: "ai-generative-ai",
     problem:
       "Support teams answered the same questions from scattered docs — slow responses, inconsistent answers, and no learning loop.",
     solution:

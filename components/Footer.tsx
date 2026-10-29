@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { LINKEDIN_URL } from "@/lib/seo";
 
 export default function Footer() {
   return (
@@ -60,7 +61,9 @@ export default function Footer() {
               <Link href="/case-studies" className="hover:text-ink">Case Studies</Link>
               <Link href="/technology" className="hover:text-ink">Technology</Link>
               <Link href="/contact" className="hover:text-ink">Contact</Link>
-              <a href="https://www.linkedin.com/in/zelda-undefined-5b825343a" target="_blank" rel="noreferrer noopener" className="hover:text-ink">LinkedIn</a>
+              {LINKEDIN_URL && (
+                <a href={LINKEDIN_URL} target="_blank" rel="noreferrer noopener" className="hover:text-ink">LinkedIn</a>
+              )}
             </div>
           </div>
         </div>
