@@ -73,6 +73,26 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+      <section className="border-t border-line">
+        <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8">
+          <Link
+            href="/custom-software-trichy"
+            className="card-ring group block rounded-2xl p-8 transition-all hover:-translate-y-1"
+          >
+            <p className="eyebrow">Local</p>
+            <h2 className="mt-3 font-display text-xl font-bold tracking-tight">
+              Custom software development in Trichy
+            </h2>
+            <p className="mt-2 text-[14.5px] leading-7 text-muted">
+              Based in Ammapettai, Tiruchirappalli — how we scope, build and support
+              custom software for teams in Tamil Nadu.
+            </p>
+            <span className="mt-4 inline-block text-[14px] font-semibold text-ink group-hover:text-accent">
+              See how we work locally →
+            </span>
+          </Link>
+        </div>
+      </section>
       <CTABand title="Not sure which service fits? Let's scope it together." />
     </main>
   );

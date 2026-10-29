@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const statics = [
     "",
     "/about",
+    "/custom-software-trichy",
     "/services",
     "/products",
     "/solutions",

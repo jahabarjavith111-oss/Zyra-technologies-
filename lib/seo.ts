@@ -105,6 +105,19 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     ],
     path: "/",
   },
+  "custom-software-trichy": {
+    title: "Custom Software Development in Trichy | ZyraTec",
+    description:
+      "ZyraTec builds custom software in Trichy, Tamil Nadu: web apps, AI systems, data platforms and mobile products, delivered remote-first across India.",
+    keywords: [
+      "custom software development Trichy",
+      "software company Trichy",
+      "software development company Tiruchirappalli",
+      "IT company Trichy",
+      "app development Trichy",
+    ],
+    path: "/custom-software-trichy",
+  },
   about: {
     title: "About ZyraTec — Software Company in Trichy, India",
     description:
