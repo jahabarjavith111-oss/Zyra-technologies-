@@ -140,6 +140,7 @@ const organizationSchema = {
       url: SITE_URL,
       logo: {
         "@type": "ImageObject",
+        "@id": `${SITE_URL}/#logo`,
         url: `${SITE_URL}/logo.png`,
         width: 320,
         height: 228,
@@ -232,6 +233,19 @@ const organizationSchema = {
       alternateName: ["ZyraTec Solutions", "ZyraTec AI", "ZyraTec Trichy"],
       publisher: { "@id": `${SITE_URL}/#organization` },
       inLanguage: "en-IN",
+    },
+    {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/#webpage`,
+      url: SITE_URL,
+      name: "ZyraTec Solutions | AI & Software Development Company",
+      description:
+        "ZyraTec builds AI-powered applications, custom software and digital solutions for businesses. Based in Trichy, Tamil Nadu, India, turning ideas into technology.",
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+      about: { "@id": `${SITE_URL}/#organization` },
+      primaryImageOfPage: { "@id": `${SITE_URL}/#logo` },
+      inLanguage: "en-IN",
+      dateModified: "2026-10-29",
     },
   ],
 };
