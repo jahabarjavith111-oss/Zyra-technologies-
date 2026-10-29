@@ -215,7 +215,7 @@ const organizationSchema = {
       "@id": `${SITE_URL}/#website`,
       url: SITE_URL,
       name: SITE_NAME,
-      alternateName: "ZyraTec AI",
+      alternateName: ["ZyraTec AI", "ZyraTec Trichy"],
       publisher: { "@id": `${SITE_URL}/#organization` },
       inLanguage: "en-IN",
     },

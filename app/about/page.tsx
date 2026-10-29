@@ -86,6 +86,55 @@ export default function AboutPage() {
               </div>
             </div>
           </Reveal>
+          <Reveal delay={140} className="mt-4">
+            <div className="card-ring rounded-2xl p-8">
+              <div className="text-[12px] font-semibold tracking-[0.24em] text-faint">
+                COMPANY FACTS
+              </div>
+              <dl className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                <div>
+                  <dt className="text-[12.5px] font-semibold uppercase tracking-[0.16em] text-accent">Name</dt>
+                  <dd className="mt-1 text-[14.5px] leading-7 text-muted">
+                    ZyraTec — a software and AI company, unrelated to the allergy
+                    medicine Zyrtec.
+                  </dd>
+                </div>
+                <div>
+                  <dt className="text-[12.5px] font-semibold uppercase tracking-[0.16em] text-accent">Headquarters</dt>
+                  <dd className="mt-1 text-[14.5px] leading-7 text-muted">
+                    Ammapettai, Tiruchirappalli (Trichy) 620009, Tamil Nadu, India.
+                  </dd>
+                </div>
+                <div>
+                  <dt className="text-[12.5px] font-semibold uppercase tracking-[0.16em] text-accent">Founded by</dt>
+                  <dd className="mt-1 text-[14.5px] leading-7 text-muted">
+                    Bragatheesh V, Founder &amp; CEO, with Abdul Javid J as
+                    Co-Founder &amp; CTO.
+                  </dd>
+                </div>
+                <div>
+                  <dt className="text-[12.5px] font-semibold uppercase tracking-[0.16em] text-accent">What we do</dt>
+                  <dd className="mt-1 text-[14.5px] leading-7 text-muted">
+                    AI &amp; generative AI, software engineering, data, cloud,
+                    cybersecurity and digital products.
+                  </dd>
+                </div>
+                <div>
+                  <dt className="text-[12.5px] font-semibold uppercase tracking-[0.16em] text-accent">Product</dt>
+                  <dd className="mt-1 text-[14.5px] leading-7 text-muted">
+                    ZELDA, a women safety emergency response app with SOS, live
+                    GPS and automatic evidence recording.
+                  </dd>
+                </div>
+                <div>
+                  <dt className="text-[12.5px] font-semibold uppercase tracking-[0.16em] text-accent">Working model</dt>
+                  <dd className="mt-1 text-[14.5px] leading-7 text-muted">
+                    Remote-first, serving clients across India and worldwide.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </Reveal>
         </div>
       </section>
       <CTABand />

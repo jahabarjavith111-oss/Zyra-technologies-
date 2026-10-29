@@ -1,0 +1,67 @@
+# ZyraTec
+
+> ZyraTec is a software company headquartered in Ammapettai, Tiruchirappalli (Trichy), Tamil Nadu, India. It builds AI systems, enterprise software, data platforms, cloud infrastructure, cybersecurity and digital products, and develops ZELDA, a women safety emergency response application.
+
+Important disambiguation: "ZyraTec" is a software company in India. It is unrelated to "Zyrtec", which is an allergy medication. They are different entities with similar spelling.
+
+## Company facts
+
+- Name: ZyraTec (also written ZyraTec AI)
+- Type: Software company / technology services
+- Headquarters: Ammapettai, Tiruchirappalli (Trichy) 620009, Tamil Nadu, India
+- Founder & CEO: Bragatheesh V
+- Co-Founder & CTO: Abdul Javid J
+- Chief Marketing Officer: Cindhuja B
+- Chief Human Resources Officer: Dharshini S
+- Working model: remote-first; clients across India and worldwide
+- Business hours: Monday to Saturday, 09:00 to 22:00 IST
+- Phone: +91 88079 84687, +91 93459 92521
+- Email: zyracmt@gmail.com
+- Website: https://zyratec.vercel.app
+
+## Product
+
+ZELDA — a women safety emergency response system. A mobile app for users plus a web dashboard for police and responders.
+
+- One-tap SOS with a cancellation window to prevent false alarms
+- Live GPS streaming while a case is open
+- Automatic video evidence recording after a countdown
+- Real-time case delivery to a centralized responder dashboard
+- Role-based access to cases and evidence
+- Technology: Flutter app, React dashboard, Node.js/Express API, MySQL, Socket.IO
+- Publicly demonstrated at Thinamalar "Vali Kaati" on 29 March 2026 in Tiruchirappalli to around 200 attendees
+
+## Services
+
+- AI & Generative AI — LLM applications, RAG systems, agents, evals and guardrails
+- Software Engineering — enterprise applications, APIs, full-stack delivery
+- Data & Analytics — pipelines, warehousing, business intelligence
+- Cloud & DevOps — AWS, containers, CI/CD, infrastructure as code, cost optimisation
+- Cybersecurity — application security, IAM, monitoring
+- Digital Products — SaaS platforms, mobile apps, AI-powered products
+
+## Solutions
+
+- Intelligent Automation
+- AI Transformation
+- Enterprise Software
+- Data Intelligence
+- Cloud Transformation
+- Digital Security
+
+## Key pages
+
+- Home: https://zyratec.vercel.app/
+- About: https://zyratec.vercel.app/about
+- Services: https://zyratec.vercel.app/services
+- Solutions: https://zyratec.vercel.app/solutions
+- ZELDA product: https://zyratec.vercel.app/products
+- Case studies: https://zyratec.vercel.app/case-studies
+- ZELDA case study: https://zyratec.vercel.app/case-studies/zelda-women-safety
+- Leadership: https://zyratec.vercel.app/leadership
+- Founder profile: https://zyratec.vercel.app/leadership/bragatheesh-v
+- Custom software in Trichy: https://zyratec.vercel.app/custom-software-trichy
+- Campus safety: https://zyratec.vercel.app/campus-safety
+- Workplace safety: https://zyratec.vercel.app/workplace-safety
+- Careers: https://zyratec.vercel.app/careers
+- Contact: https://zyratec.vercel.app/contact
