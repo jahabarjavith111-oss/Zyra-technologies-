@@ -50,14 +50,14 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-4xl px-5 pb-24 pt-16 text-center sm:px-8 lg:pb-32 lg:pt-24">
         <p className="anim-rise eyebrow" style={{ animationDelay: "60ms" }}>
-          ZyraTec
+          Software · AI · Women Safety Technology
         </p>
         <h1
           className="anim-rise section-head mt-5 font-display text-[clamp(2.6rem,6.2vw,4.9rem)] font-bold leading-[1.02] tracking-tight text-balance"
           style={{ animationDelay: "140ms" }}
         >
           <span className="mb-4 block text-[0.34em] font-semibold uppercase tracking-[0.22em] text-accent">
-            Software &amp; AI Company · Trichy, India
+            ZyraTec · Software &amp; AI Company · Trichy, India
           </span>
           ENGINEERING
           <br />
@@ -69,7 +69,7 @@ export default function Hero() {
           className="anim-rise mx-auto mt-6 max-w-xl text-[17px] leading-8 text-muted"
           style={{ animationDelay: "220ms" }}
         >
-          We build intelligent software, AI systems, digital products and
+          ZyraTec builds intelligent software, AI systems, digital products and
           technology solutions for the next generation of businesses — from our
           base in Trichy, Tamil Nadu, India to clients worldwide. Creators of the
           ZELDA women safety app.
