@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
 import JsonLd from "@/components/JsonLd";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { SOLUTIONS } from "@/lib/offerings";
+import { SOLUTIONS, SERVICES } from "@/lib/offerings";
 import { canonical, OG_IMAGE, SITE_URL } from "@/lib/seo";
 
 export function generateStaticParams() {
@@ -60,6 +60,7 @@ export default async function SolutionDetail({ params }: { params: Promise<{ slu
     areaServed: ["Tiruchirappalli", "Tamil Nadu", "India", "Worldwide"],
     url: canonical(path),
   };
+  const relatedService = SERVICES.find((x) => x.slug === s.service);
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -124,6 +125,25 @@ export default async function SolutionDetail({ params }: { params: Promise<{ slu
           </div>
         </div>
       </section>
+      {relatedService && (
+        <section className="border-t border-line">
+          <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8">
+            <p className="eyebrow">Delivered through</p>
+            <Link
+              href={`/services/${relatedService.slug}`}
+              className="card-ring group mt-4 block rounded-2xl p-8 transition-all hover:-translate-y-1"
+            >
+              <h2 className="font-display text-xl font-bold tracking-tight">
+                {relatedService.title} services in India
+              </h2>
+              <p className="mt-2 text-[14.5px] text-muted">{relatedService.tagline}</p>
+              <span className="mt-4 inline-block text-[14px] font-semibold text-ink group-hover:text-accent">
+                See how we deliver {relatedService.title} →
+              </span>
+            </Link>
+          </div>
+        </section>
+      )}
       <CTABand />
     </main>
   );

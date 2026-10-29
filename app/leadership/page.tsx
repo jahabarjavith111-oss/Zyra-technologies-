@@ -2,8 +2,10 @@ import PageHero from "@/components/PageHero";
 import Leadership from "@/components/Leadership";
 import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
+import JsonLd from "@/components/JsonLd";
+import { TEAM } from "@/lib/company";
 
-import { PAGE_SEO, canonical, OG_IMAGE } from "@/lib/seo";
+import { PAGE_SEO, canonical, collectionSchema, OG_IMAGE } from "@/lib/seo";
 
 export const metadata = {
   title: PAGE_SEO.leadership.title,
@@ -27,6 +29,17 @@ export const metadata = {
 export default function LeadershipPage() {
   return (
     <main>
+      <JsonLd
+        data={collectionSchema({
+          name: "ZyraTec Leadership",
+          description: PAGE_SEO.leadership.description,
+          path: PAGE_SEO.leadership.path,
+          items: TEAM.map((m) => ({
+            name: `${m.name} — ${m.role}`,
+            url: canonical(`/leadership/${m.slug}`),
+          })),
+        })}
+      />
       <PageHero
         eyebrow="Leadership"
         title="ZyraTec Leadership — Trichy, India"

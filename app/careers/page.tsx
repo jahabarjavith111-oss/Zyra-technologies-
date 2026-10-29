@@ -2,6 +2,8 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
+import JsonLd from "@/components/JsonLd";
+import { canonical, LOGO_URL, OG_IMAGE, PAGE_SEO, SITE_URL } from "@/lib/seo";
 
 const ROLES = [
   { team: "Software Engineering", title: "Full-Stack Engineer", type: "Full-time · Remote", desc: "React + Spring Boot/Node, APIs and enterprise delivery." },
@@ -12,8 +14,6 @@ const ROLES = [
   { team: "Cybersecurity", title: "Application Security Engineer", type: "Full-time · Remote", desc: "AppSec reviews, IAM and monitoring." },
   { team: "Internships", title: "Engineering Intern (2026)", type: "Internship · 6 months · Remote", desc: "Ship real features with senior mentorship." },
 ];
-
-import { PAGE_SEO, canonical, OG_IMAGE } from "@/lib/seo";
 
 export const metadata = {
   title: PAGE_SEO.careers.title,
@@ -35,8 +35,36 @@ export const metadata = {
 };
 
 export default function CareersPage() {
+  // JobPosting needs accurate dates. Bump JOBS_UPDATED whenever ROLES changes,
+  // and keep VALID_THROUGH ~90 days ahead so listings stay fresh.
+  const JOBS_UPDATED = "2026-10-29";
+  const VALID_THROUGH = "2027-01-31";
+
+  const jobPostings = ROLES.map((r) => ({
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    title: r.title,
+    description: `<p>${r.desc}</p><p>Team: ${r.team}. Type: ${r.type}. ZyraTec is a remote-first software company headquartered in Ammapettai, Trichy (Tiruchirappalli), Tamil Nadu, India.</p>`,
+    datePosted: JOBS_UPDATED,
+    validThrough: VALID_THROUGH,
+    employmentType: r.type.toLowerCase().includes("intern") ? "INTERN" : "FULL_TIME",
+    hiringOrganization: {
+      "@type": "Organization",
+      name: "ZyraTec",
+      sameAs: SITE_URL,
+      logo: LOGO_URL,
+    },
+    jobLocationType: "TELECOMMUTE",
+    applicantLocationRequirements: { "@type": "Country", name: "India" },
+    industry: "Information Technology",
+    occupationalCategory: r.team,
+    directApply: true,
+    url: canonical("/careers"),
+  }));
+
   return (
     <main>
+      <JsonLd data={jobPostings} />
       <PageHero
         eyebrow="Careers"
         title="Careers at ZyraTec — Remote Software & AI Jobs"

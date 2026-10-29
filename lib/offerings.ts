@@ -10,6 +10,8 @@ export type Detail = {
   deliverables: string[];
   stack: string[];
   faqs?: Faq[];
+  /** Service slug this solution is delivered through — used for internal linking. */
+  service?: string;
 };
 
 export const SERVICES: Detail[] = [
@@ -115,6 +117,7 @@ export const SOLUTIONS: Detail[] = [
     points: ["Workflow automation", "Agent orchestration", "Human review gates"],
     deliverables: ["Automation map", "Pilot workflow live", "Exception handling", "ROI report"],
     stack: ["Agents", "Workflows", "APIs"],
+    service: "ai-generative-ai",
   },
   {
     slug: "ai-transformation",
@@ -125,6 +128,7 @@ export const SOLUTIONS: Detail[] = [
     points: ["LLM strategy", "Pilot portfolio", "Evals & guardrails", "Team enablement"],
     deliverables: ["AI roadmap", "2 production pilots", "Governance pack", "Training sessions"],
     stack: ["LLMs", "Evals", "RAG"],
+    service: "ai-generative-ai",
   },
   {
     slug: "enterprise-software",
@@ -135,6 +139,7 @@ export const SOLUTIONS: Detail[] = [
     points: ["Backend systems", "API platforms", "Internal tools"],
     deliverables: ["Platform architecture", "Core modules live", "Access & audit", "Runbooks"],
     stack: ["Java", "Spring Boot", "PostgreSQL"],
+    service: "software-engineering",
   },
   {
     slug: "data-intelligence",
@@ -145,6 +150,7 @@ export const SOLUTIONS: Detail[] = [
     points: ["Data pipelines", "BI & dashboards", "Predictive models"],
     deliverables: ["Pipeline suite", "Exec dashboard", "Forecast model"],
     stack: ["SQL", "Python", "BI"],
+    service: "data-analytics",
   },
   {
     slug: "cloud-transformation",
@@ -155,6 +161,7 @@ export const SOLUTIONS: Detail[] = [
     points: ["Migration", "Kubernetes & IaC", "FinOps"],
     deliverables: ["Migration plan", "Modernized workloads", "Cost controls"],
     stack: ["AWS", "Docker", "Terraform"],
+    service: "cloud-devops",
   },
   {
     slug: "digital-security",
@@ -165,5 +172,6 @@ export const SOLUTIONS: Detail[] = [
     points: ["AppSec reviews", "IAM", "Monitoring"],
     deliverables: ["Findings & fixes", "Hardened identity", "Detection rules"],
     stack: ["AppSec", "IAM", "Monitoring"],
+    service: "cybersecurity",
   },
 ];
