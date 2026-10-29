@@ -28,13 +28,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
 
   title: {
-    default:
-      "ZyraTec | Software, AI & Women Safety App Company in India",
+    default: "ZyraTec | AI & Software Development Company",
     template: "%s",
   },
 
   description:
-    "ZyraTec is a software company in Trichy, India, founded by Bragatheesh V: AI development, enterprise software, data, cloud and the ZELDA women safety app.",
+    "ZyraTec builds AI-powered applications, custom software and digital solutions for businesses. Based in Trichy, Tamil Nadu, India, turning ideas into technology.",
 
   keywords: [
     "ZyraTec",
@@ -78,26 +77,26 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
-    title: "ZyraTec | Software, AI & Women Safety App Company in India",
+    title: "ZyraTec | AI & Software Development Company",
     description:
-      "AI · Software · Data · Cloud · Cybersecurity · Digital Products · ZELDA women safety app. A software company in Trichy, India building intelligent systems.",
-    url: SITE_URL,
+      "ZyraTec builds AI-powered applications, custom software and digital solutions for businesses. Based in Trichy, Tamil Nadu, India.",
+    url: `${SITE_URL}/`,
     locale: "en_IN",
     images: [
       {
         url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "ZyraTec — Engineering Intelligence. Building What's Next.",
+        alt: "ZyraTec — AI and software development company in Trichy, India",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "ZyraTec | Software, AI & Women Safety App Company in India",
+    title: "ZyraTec | AI & Software Development Company",
     description:
-      "Software company in Trichy, India — AI development, enterprise software, data, cloud, cybersecurity and ZELDA women safety app.",
+      "AI-powered applications, custom software and digital solutions for businesses. Based in Trichy, Tamil Nadu, India.",
     images: [OG_IMAGE],
   },
 
