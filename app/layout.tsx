@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: `${SITE_URL}/`,
+    canonical: SITE_URL,
   },
 
   openGraph: {
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     title: "ZyraTec | AI & Software Development Company",
     description:
       "ZyraTec builds AI-powered applications, custom software and digital solutions for businesses. Based in Trichy, Tamil Nadu, India.",
-    url: `${SITE_URL}/`,
+    url: SITE_URL,
     locale: "en_IN",
     images: [
       {
