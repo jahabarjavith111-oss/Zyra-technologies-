@@ -33,6 +33,21 @@ export type PageSeo = {
   path: string;
 };
 
+export type Faq = { q: string; a: string };
+
+/** FAQPage JSON-LD for visible Q&A sections. */
+export function faqSchema(faqs: Faq[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map(({ q, a }) => ({
+      "@type": "Question",
+      name: q,
+      acceptedAnswer: { "@type": "Answer", text: a },
+    })),
+  };
+}
+
 export const PAGE_SEO: Record<string, PageSeo> = {
   home: {
     title: "ZyraTec | Software, AI & Women Safety App Company in India",

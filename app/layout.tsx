@@ -131,11 +131,26 @@ const organizationSchema = {
       logo: {
         "@type": "ImageObject",
         url: `${SITE_URL}/logo.png`,
+        width: 320,
+        height: 228,
+      },
+      founder: {
+        "@type": "Person",
+        name: "Bragatheesh V",
+        url: `${SITE_URL}/leadership/bragatheesh-v`,
       },
       description:
         "ZyraTec is a software company in Trichy, Tamil Nadu, India building AI systems, enterprise software, data platforms, cloud solutions, cybersecurity and the ZELDA women safety app.",
       email: CONTACT_EMAIL,
       telephone: CONTACT_PHONES[0],
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: CONTACT_PHONES[0],
+        email: CONTACT_EMAIL,
+        contactType: "sales",
+        areaServed: ["IN", "Worldwide"],
+        availableLanguage: ["English", "Tamil"],
+      },
       address: {
         "@type": "PostalAddress",
         streetAddress: ADDRESS.street,

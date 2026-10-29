@@ -6,6 +6,9 @@ const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ||
   "https://zyratec.vercel.app";
 
+/** Fixed content date — update when page content changes (avoids a false "modified now" on every build). */
+const LAST_MODIFIED = new Date("2026-10-29T00:00:00+05:30");
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const statics = [
     "",
@@ -20,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
   ].map((p) => ({
     url: `${SITE_URL}${p}`,
-    lastModified: new Date(),
+    lastModified: LAST_MODIFIED,
     changeFrequency: "monthly" as const,
     priority: p === "" ? 1 : 0.8,
   }));
@@ -28,28 +31,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const dynamics = [
     ...SERVICES.map((s) => ({
       url: `${SITE_URL}/services/${s.slug}`,
-      lastModified: new Date(),
+      lastModified: LAST_MODIFIED,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
 
     ...SOLUTIONS.map((s) => ({
       url: `${SITE_URL}/solutions/${s.slug}`,
-      lastModified: new Date(),
+      lastModified: LAST_MODIFIED,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
 
     ...TEAM.map((m) => ({
       url: `${SITE_URL}/leadership/${m.slug}`,
-      lastModified: new Date(),
+      lastModified: LAST_MODIFIED,
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),
 
     ...CASES.map((c) => ({
       url: `${SITE_URL}/case-studies/${c.slug}`,
-      lastModified: new Date(),
+      lastModified: LAST_MODIFIED,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),

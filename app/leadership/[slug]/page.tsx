@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       url: canonical(path),
       siteName: "ZyraTec",
       type: "profile",
-      images: [{ url: m.photo.startsWith("http") ? m.photo : `${SITE_URL}${m.photo}`, alt: m.name }],
+      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${m.name} — ${m.role} at ZyraTec` }],
     },
     twitter: {
       card: "summary_large_image" as const,

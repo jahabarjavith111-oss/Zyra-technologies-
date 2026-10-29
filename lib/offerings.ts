@@ -1,3 +1,5 @@
+import type { Faq } from "./seo";
+
 export type Detail = {
   slug: string;
   n: string;
@@ -7,6 +9,7 @@ export type Detail = {
   points: string[];
   deliverables: string[];
   stack: string[];
+  faqs?: Faq[];
 };
 
 export const SERVICES: Detail[] = [
@@ -19,6 +22,11 @@ export const SERVICES: Detail[] = [
     points: ["LLM solution design", "AI agents & orchestration", "RAG & knowledge systems", "Model evaluation & guardrails", "Intelligent automation"],
     deliverables: ["AI use-case roadmap", "Production agent system", "Eval harness & safety gates", "Cost & latency optimization"],
     stack: ["LLMs", "RAG", "Agents", "Python", "FastAPI"],
+    faqs: [
+      { q: "Can you take an AI pilot to production?", a: "Yes. We design the use case, build the LLM, agent or RAG system, add evals and guardrails, then deploy and monitor it in production." },
+      { q: "How do you reduce hallucinations and control LLM cost?", a: "We ground answers in your data with RAG, enforce citations, run automated evals, cache repeated work and route requests to the right model for the job." },
+      { q: "Can you work with our existing documents and APIs?", a: "Yes. We connect to your documents, databases and APIs with access controls, then build retrieval and evaluation around your real content." },
+    ],
   },
   {
     slug: "software-engineering",
@@ -29,6 +37,11 @@ export const SERVICES: Detail[] = [
     points: ["Enterprise applications", "Full-stack development", "Backend systems", "API design & platforms", "Microservices"],
     deliverables: ["System architecture", "Production backend + APIs", "Admin & internal tooling", "Handover docs & tests"],
     stack: ["Java", "Spring Boot", "React", "Node.js", "TypeScript"],
+    faqs: [
+      { q: "Do you build enterprise applications end to end?", a: "Yes — architecture, backend, APIs, frontend, admin tooling, tests and handover documentation are part of one delivery." },
+      { q: "Can you take over an existing codebase?", a: "Yes. We audit the code, document risks, stabilise the critical paths and then ship improvements in small, reviewed releases." },
+      { q: "How do you keep quality high?", a: "Senior review on every change, automated tests, staging environments and clear release checklists before anything reaches production." },
+    ],
   },
   {
     slug: "data-analytics",
@@ -39,6 +52,11 @@ export const SERVICES: Detail[] = [
     points: ["Data platforms", "Business intelligence", "Predictive analytics", "Data engineering", "Visualization"],
     deliverables: ["Data model & pipelines", "Warehouse setup", "BI dashboards", "Forecasting models"],
     stack: ["SQL", "PostgreSQL", "Python", "BI tools"],
+    faqs: [
+      { q: "Can you build our data platform from scratch?", a: "Yes. We model the data, build tested pipelines and a warehouse layer, then add dashboards on top." },
+      { q: "Do you work with our existing BI tools?", a: "Yes. We connect Looker, Tableau, Power BI or your current tool to a governed semantic layer so every team sees the same numbers." },
+      { q: "How long does a data project take?", a: "A focused pipeline and dashboard usually takes 4–8 weeks; a full platform is scoped in phases after a short discovery." },
+    ],
   },
   {
     slug: "cloud-devops",
@@ -49,6 +67,11 @@ export const SERVICES: Detail[] = [
     points: ["Cloud architecture", "CI/CD pipelines", "Infrastructure as code", "Containerization", "Cloud automation"],
     deliverables: ["Cloud landing zone", "CI/CD setup", "Container platform", "FinOps dashboard"],
     stack: ["AWS", "Docker", "CI/CD", "GitHub"],
+    faqs: [
+      { q: "Can you migrate our workloads to AWS?", a: "Yes. We plan the migration, containerise what needs it, set up infrastructure as code and cut over with rollback paths." },
+      { q: "Do you set up CI/CD and infrastructure as code?", a: "Yes. We build pipelines, environments and Terraform/CDK definitions so releases are repeatable and auditable." },
+      { q: "How do you control cloud costs?", a: "We add tagging, budgets and FinOps dashboards, right-size resources and remove idle infrastructure before it shows up on the bill." },
+    ],
   },
   {
     slug: "cybersecurity",
@@ -59,6 +82,11 @@ export const SERVICES: Detail[] = [
     points: ["Application security", "Identity & access management", "Security monitoring", "Risk intelligence"],
     deliverables: ["Security review report", "IAM hardening", "Monitoring & alerts", "Risk register"],
     stack: ["AppSec", "IAM", "SIEM", "Cloud security"],
+    faqs: [
+      { q: "What does an application security review include?", a: "Code and configuration review, dependency checks, authentication and authorisation testing, and a prioritised findings report with fixes." },
+      { q: "Can you help with IAM and least-privilege access?", a: "Yes. We map roles, remove excess permissions and add audit logging across cloud and application layers." },
+      { q: "Do you provide ongoing monitoring?", a: "Yes. We set up detection rules, alerts and a response runbook so issues are caught and handled after launch." },
+    ],
   },
   {
     slug: "digital-products",
@@ -69,6 +97,11 @@ export const SERVICES: Detail[] = [
     points: ["SaaS platforms", "Mobile applications", "Enterprise products", "AI-powered products"],
     deliverables: ["Product blueprint", "MVP build", "Design system", "Launch & iteration plan"],
     stack: ["React", "React Native", "Node.js", "Cloud"],
+    faqs: [
+      { q: "Do you build SaaS and mobile apps?", a: "Yes. We cover product strategy, UX, web and mobile builds, backend services and launch." },
+      { q: "Can you design the product as well as build it?", a: "Yes. We prototype the core flows, validate them with users and turn the agreed design into a production build." },
+      { q: "What happens after launch?", a: "We monitor usage, fix issues and ship improvements in short cycles, with a roadmap agreed after the first release." },
+    ],
   },
 ];
 

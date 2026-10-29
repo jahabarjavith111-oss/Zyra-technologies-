@@ -19,7 +19,7 @@ export const TEAM: Member[] = [
     focus: "Vision & Strategy · Business · Partnerships · Operations",
     bio: "Sets ZyraTec's direction — which problems we solve, which markets we enter, and what excellence looks like. Owns vision and strategy, business growth, partnerships and operations.",
     owns: ["Vision & Strategy", "Business", "Partnerships", "Operations"],
-    photo: "/team/bragatheesh-v.png",
+    photo: "/team/bragatheesh-v.webp",
     contributions: [
       "Founded ZyraTec and defined its vision — engineering intelligence, building what's next.",
       "Turned the Zelda women-safety concept into a shipped system, from idea to public showcase.",
@@ -35,7 +35,7 @@ export const TEAM: Member[] = [
     focus: "Technology · AI & GenAI · Engineering · Architecture",
     bio: "Owns the technical backbone — technology choices, AI and GenAI systems, engineering execution and architecture across every project and product.",
     owns: ["Technology", "AI & GenAI", "Engineering", "Architecture"],
-    photo: "/team/abdul-javid-j.png",
+    photo: "/team/abdul-javid-j.webp",
     contributions: [
       "Co-founded ZyraTec and owns its entire technical direction.",
       "Architected the Zelda emergency response system — Flutter app, police dashboard, and real-time backend.",
@@ -56,7 +56,7 @@ export const TEAM: Member[] = [
       "Content & Social Media",
       "Brand Growth & Outreach",
     ],
-    photo: "/team/cindhuja-b.png",
+    photo: "/team/cindhuja-b.webp",
     contributions: [
       "Leads ZyraTec's marketing strategy and brand positioning.",
       "Builds a consistent brand identity across the company's website, social media and digital platforms.",
@@ -79,7 +79,7 @@ export const TEAM: Member[] = [
       "Performance Management & Development",
       "Organizational Culture & People Operations",
     ],
-    photo: "/team/dharshini.jpg",
+    photo: "/team/dharshini.webp",
     contributions: [
       "Leads HR strategy and workforce planning to support ZyraTec's business goals.",
       "Manages recruitment, onboarding and talent development to build a skilled and effective team.",

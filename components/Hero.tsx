@@ -56,6 +56,9 @@ export default function Hero() {
           className="anim-rise section-head mt-5 font-display text-[clamp(2.6rem,6.2vw,4.9rem)] font-bold leading-[1.02] tracking-tight text-balance"
           style={{ animationDelay: "140ms" }}
         >
+          <span className="mb-4 block text-[0.34em] font-semibold uppercase tracking-[0.22em] text-accent">
+            Software &amp; AI Company · Trichy, India
+          </span>
           ENGINEERING
           <br />
           INTELLIGENCE.

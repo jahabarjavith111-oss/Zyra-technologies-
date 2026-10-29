@@ -11,10 +11,15 @@ import Work from "@/components/Work";
 import Leadership from "@/components/Leadership";
 import Careers from "@/components/Careers";
 import Contact from "@/components/Contact";
+import FaqSection from "@/components/FaqSection";
+import JsonLd from "@/components/JsonLd";
+import { HOME_FAQS } from "@/lib/faqs";
+import { faqSchema } from "@/lib/seo";
 
 export default function Home() {
   return (
     <main>
+      <JsonLd data={faqSchema(HOME_FAQS)} />
       <Hero />
       <Intro />
       <Capabilities />
@@ -27,6 +32,7 @@ export default function Home() {
       <Work />
       <Leadership />
       <Careers />
+      <FaqSection items={HOME_FAQS} title="ZyraTec — frequently asked questions" />
       <Contact />
     </main>
   );

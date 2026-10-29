@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 /// Portrait frame for leadership photos.
-/// Pass `photo` (e.g. "/team/bragatheesh-v.png") to render the real image;
+/// Pass `photo` (e.g. "/team/bragatheesh-v.webp") to render the real image;
 /// without it, a dashed placeholder outline is shown instead.
 
 export default function PhotoFrame({
@@ -14,7 +14,6 @@ export default function PhotoFrame({
   variant?: "card" | "profile";
 }) {
   const initial = name.charAt(0);
-  const isLeadership = photo?.startsWith("/team/");
 
   return (
     <div
@@ -23,26 +22,13 @@ export default function PhotoFrame({
       } ${variant === "profile" ? "aspect-[4/5]" : "aspect-[16/10]"}`}
     >
       {photo ? (
-        isLeadership ? (
-          // Use native <img> for leadership photos — serves original file with zero compression
-          <img
-            src={photo}
-            alt={name}
-            className="w-full h-full object-cover object-top"
-            loading="lazy"
-            decoding="async"
-          />
-        ) : (
-          // Next.js Image for other photos (still optimized)
-          <Image
-            src={photo}
-            alt={name}
-            fill
-            className="object-cover object-top"
-            sizes="(max-width: 640px) 100vw, 420px"
-            quality={100}
-          />
-        )
+        <Image
+          src={photo}
+          alt={name}
+          fill
+          className="object-cover object-top"
+          sizes="(max-width: 640px) 100vw, 420px"
+        />
       ) : (
         <div className="flex h-full flex-col items-center justify-center">
           <div className="grid h-16 w-16 place-items-center rounded-full border border-line bg-paper-2 font-display text-2xl font-bold text-accent">

@@ -5,8 +5,9 @@ import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
 import JsonLd from "@/components/JsonLd";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import FaqSection from "@/components/FaqSection";
 import { SERVICES } from "@/lib/offerings";
-import { canonical, OG_IMAGE, SITE_URL } from "@/lib/seo";
+import { canonical, faqSchema, OG_IMAGE, SITE_URL } from "@/lib/seo";
 
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
@@ -93,7 +94,7 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
 
   return (
     <main>
-      <JsonLd data={[serviceSchema, breadcrumbSchema]} />
+      <JsonLd data={[serviceSchema, breadcrumbSchema, ...(s.faqs ? [faqSchema(s.faqs)] : [])]} />
       <Breadcrumbs items={breadcrumbs} />
       <PageHero eyebrow={`Services in India · ${s.n}`} title={`${s.title} Services in India`} desc={s.tagline} />
       <section className="border-t border-line">
@@ -145,6 +146,9 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
           </div>
         </div>
       </section>
+      {s.faqs && s.faqs.length > 0 && (
+        <FaqSection items={s.faqs} title={`${s.title} — frequently asked questions`} />
+      )}
       <CTABand />
     </main>
   );

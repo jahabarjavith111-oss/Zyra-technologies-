@@ -46,6 +46,20 @@ export default async function SolutionDetail({ params }: { params: Promise<{ slu
   if (!s) notFound();
 
   const path = `/solutions/${s.slug}`;
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: `${s.title} — ZyraTec`,
+    description: `${s.desc} ${s.tagline}`,
+    serviceType: s.title,
+    provider: {
+      "@type": "Organization",
+      name: "ZyraTec",
+      url: SITE_URL,
+    },
+    areaServed: ["Tiruchirappalli", "Tamil Nadu", "India", "Worldwide"],
+    url: canonical(path),
+  };
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -64,7 +78,7 @@ export default async function SolutionDetail({ params }: { params: Promise<{ slu
 
   return (
     <main>
-      <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={[serviceSchema, breadcrumbSchema]} />
       <Breadcrumbs items={breadcrumbs} />
       <PageHero eyebrow={`Solutions for Businesses · ${s.n}`} title={`${s.title} for Modern Businesses`} desc={s.tagline} />
       <section className="border-t border-line">
