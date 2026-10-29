@@ -223,6 +223,39 @@ export default function ProductsPage() {
           </Reveal>
         </div>
       </section>
+      <section className="border-t border-line">
+        <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8">
+          <p className="eyebrow">Deploy ZELDA</p>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            <Link
+              href="/campus-safety"
+              className="card-ring group block rounded-2xl p-8 transition-all hover:-translate-y-1"
+            >
+              <h2 className="font-display text-lg font-bold tracking-tight">For campuses and colleges</h2>
+              <p className="mt-2 text-[14.5px] leading-7 text-muted">
+                Campus safety software for colleges in India — student SOS, live
+                location and a security desk dashboard.
+              </p>
+              <span className="mt-4 inline-block text-[14px] font-semibold text-ink group-hover:text-accent">
+                Campus safety →
+              </span>
+            </Link>
+            <Link
+              href="/workplace-safety"
+              className="card-ring group block rounded-2xl p-8 transition-all hover:-translate-y-1"
+            >
+              <h2 className="font-display text-lg font-bold tracking-tight">For workplaces and employers</h2>
+              <p className="mt-2 text-[14.5px] leading-7 text-muted">
+                An employee safety app for Indian workplaces — late shifts, field
+                work and lone travel.
+              </p>
+              <span className="mt-4 inline-block text-[14px] font-semibold text-ink group-hover:text-accent">
+                Workplace safety →
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
       <CTABand title="Building safety tech with us?" desc="Talk to the team behind ZELDA." />
     </main>
   );

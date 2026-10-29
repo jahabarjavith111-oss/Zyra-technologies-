@@ -118,6 +118,30 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     ],
     path: "/custom-software-trichy",
   },
+  "campus-safety": {
+    title: "Campus Safety Software for Colleges in India | ZyraTec",
+    description:
+      "ZELDA campus safety software gives colleges one-tap SOS, live GPS, recorded evidence and a real-time responder dashboard for student safety in India.",
+    keywords: [
+      "campus safety software India",
+      "women safety app for colleges",
+      "college safety app India",
+      "student safety software Tamil Nadu",
+    ],
+    path: "/campus-safety",
+  },
+  "workplace-safety": {
+    title: "Workplace Safety App for Employees in India | ZyraTec",
+    description:
+      "ZELDA is an employee safety app for Indian workplaces: one-tap SOS, live GPS, automatic evidence recording and a real-time response dashboard.",
+    keywords: [
+      "employee safety app India",
+      "women safety app for workplaces",
+      "workplace safety software India",
+      "staff safety app India",
+    ],
+    path: "/workplace-safety",
+  },
   about: {
     title: "About ZyraTec — Software Company in Trichy, India",
     description:

@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/about",
     "/custom-software-trichy",
+    "/campus-safety",
+    "/workplace-safety",
     "/services",
     "/products",
     "/solutions",

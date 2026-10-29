@@ -29,6 +29,60 @@ export const TRICHY_FAQS: Faq[] = [
   },
 ];
 
+export const CAMPUS_FAQS: Faq[] = [
+  {
+    q: "What is campus safety software?",
+    a: "It is software that lets a student raise an alarm from their phone and gives campus security live location, recorded evidence and case status in one dashboard — instead of a phone call that leaves responders guessing.",
+  },
+  {
+    q: "How does ZELDA work on a college campus?",
+    a: "Students install the app and register with campus credentials. On SOS, the app shares live GPS, starts recording evidence after a short cancellation window and pushes the case to the security desk in real time.",
+  },
+  {
+    q: "Do students need a special device?",
+    a: "No. ZELDA runs as an app on Android and iOS, and the responder side is a web dashboard that works in any modern browser — no dedicated hardware required.",
+  },
+  {
+    q: "How is a campus pilot run?",
+    a: "We configure the campus, onboard a group of students and security staff, run it for an agreed period and review response times with you before deciding on a wider rollout.",
+  },
+  {
+    q: "Where is the data stored?",
+    a: "Cases, locations and evidence are stored in a controlled database with role-based access, so security staff see what they need and students keep control of their own reports.",
+  },
+  {
+    q: "Which institutions is ZELDA suited to?",
+    a: "Engineering and arts colleges, universities, hostels and residential campuses in Tamil Nadu and across India that need a verifiable safety process rather than a paper register.",
+  },
+];
+
+export const WORKPLACE_FAQS: Faq[] = [
+  {
+    q: "What is an employee safety app?",
+    a: "It is an app that lets staff raise an alarm instantly and gives your response team live location, recorded evidence and case status — useful for late shifts, field work and lone travel.",
+  },
+  {
+    q: "How does ZELDA support women employees?",
+    a: "ZELDA was built as a women safety system: one-tap SOS with a cancellation window, live GPS streaming, automatic evidence recording and a real-time dashboard for the team responding.",
+  },
+  {
+    q: "Does it replace our security team?",
+    a: "No. It gives your existing security or HR response team better information — location, evidence and status — so they can act faster instead of reconstructing events afterwards.",
+  },
+  {
+    q: "Can it cover night shifts and field staff?",
+    a: "Yes. Because the alarm carries live location and recorded context, it works for late-shift travel, site visits and staff working alone away from the office.",
+  },
+  {
+    q: "How long does workplace deployment take?",
+    a: "A scoped pilot is usually configured in weeks, not months: we set up your responder dashboard, onboard an initial group of employees and review the workflow with you before wider rollout.",
+  },
+  {
+    q: "Is employee data private?",
+    a: "Access is role-based and scoped, so only the responders you nominate can view a case. Reports and evidence stay with the organisation that runs the deployment.",
+  },
+];
+
 export const HOME_FAQS: Faq[] = [
   {
     q: "Where is ZyraTec based?",
