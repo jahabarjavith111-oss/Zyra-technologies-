@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "ZyraTec is a software company in Trichy, India building AI development, enterprise software, data, cloud, cybersecurity solutions and ZELDA women safety app.",
+    "ZyraTec is a software company in Trichy, India, founded by Bragatheesh V: AI development, enterprise software, data, cloud and the ZELDA women safety app.",
 
   keywords: [
     "ZyraTec",
@@ -135,11 +135,7 @@ const organizationSchema = {
         width: 320,
         height: 228,
       },
-      founder: {
-        "@type": "Person",
-        name: "Bragatheesh V",
-        url: `${SITE_URL}/leadership/bragatheesh-v`,
-      },
+      founder: { "@id": `${SITE_URL}/#founder` },
       description:
         "ZyraTec is a software company in Trichy, Tamil Nadu, India building AI systems, enterprise software, data platforms, cloud solutions, cybersecurity and the ZELDA women safety app.",
       email: CONTACT_EMAIL,
@@ -199,6 +195,20 @@ const organizationSchema = {
           },
         })),
       },
+    },
+    {
+      "@type": "Person",
+      "@id": `${SITE_URL}/#founder`,
+      name: "Bragatheesh V",
+      jobTitle: "Founder & CEO",
+      url: `${SITE_URL}/leadership/bragatheesh-v`,
+      worksFor: { "@id": `${SITE_URL}/#organization` },
+      knowsAbout: [
+        "Artificial Intelligence",
+        "Generative AI",
+        "Software Engineering",
+        "Women Safety Technology",
+      ],
     },
     {
       "@type": "WebSite",

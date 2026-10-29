@@ -55,16 +55,15 @@ export default async function MemberDetail({ params }: { params: Promise<{ slug:
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": m.slug === "bragatheesh-v" ? `${SITE_URL}/#founder` : `${canonical(`/leadership/${m.slug}`)}#person`,
     name: m.name,
     jobTitle: m.role,
     description: m.bio,
     image: m.photo.startsWith("http") ? m.photo : `${SITE_URL}${m.photo}`,
-    worksFor: {
-      "@type": "Organization",
-      name: "ZyraTec",
-      url: SITE_URL,
-    },
+    worksFor: { "@id": `${SITE_URL}/#organization` },
     url: canonical(`/leadership/${m.slug}`),
+    mainEntityOfPage: canonical(`/leadership/${m.slug}`),
+    knowsAbout: m.owns,
   };
 
   const breadcrumbSchema = {

@@ -92,7 +92,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
   home: {
     title: "ZyraTec | Software, AI & Women Safety App Company in India",
     description:
-      "ZyraTec is a software company in Trichy, India building AI development, enterprise software, data, cloud, cybersecurity solutions and ZELDA women safety app.",
+      "ZyraTec is a software company in Trichy, India, founded by Bragatheesh V: AI development, enterprise software, data, cloud and the ZELDA women safety app.",
     keywords: [
       "ZyraTec",
       "zyratec",

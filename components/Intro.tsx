@@ -28,6 +28,11 @@ export default function Intro() {
               including the ZELDA women safety app.
             </p>
             <p className="mt-4 text-[16.5px] leading-8 text-muted">
+              Founded by <strong className="font-semibold text-ink">Bragatheesh V</strong> and
+              led with CTO Abdul Javid J, the team works remote-first with clients
+              across India and worldwide.
+            </p>
+            <p className="mt-4 text-[16.5px] leading-8 text-muted">
               We don&apos;t ship demos. We design, engineer and scale systems
               that businesses can run on — from AI products to enterprise
               platforms.
