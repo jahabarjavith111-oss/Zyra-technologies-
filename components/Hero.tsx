@@ -57,7 +57,7 @@ export default function Hero() {
           style={{ animationDelay: "140ms" }}
         >
           <span className="mb-4 block text-[0.34em] font-semibold uppercase tracking-[0.22em] text-accent">
-            ZyraTec · Software &amp; AI Company · Trichy, India
+            ZyraTec Solutions · Software &amp; AI Company · Trichy, India
           </span>
           ENGINEERING
           <br />

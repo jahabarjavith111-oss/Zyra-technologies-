@@ -95,8 +95,8 @@ export default function AboutPage() {
                 <div>
                   <dt className="text-[12.5px] font-semibold uppercase tracking-[0.16em] text-accent">Name</dt>
                   <dd className="mt-1 text-[14.5px] leading-7 text-muted">
-                    ZyraTec — a software and AI company, unrelated to the allergy
-                    medicine Zyrtec.
+                    ZyraTec, also written ZyraTec Solutions — a software and AI
+                    company, unrelated to the allergy medicine Zyrtec.
                   </dd>
                 </div>
                 <div>

@@ -1,12 +1,17 @@
 # ZyraTec
 
-> ZyraTec is a software company headquartered in Ammapettai, Tiruchirappalli (Trichy), Tamil Nadu, India. It builds AI systems, enterprise software, data platforms, cloud infrastructure, cybersecurity and digital products, and develops ZELDA, a women safety emergency response application.
+> ZyraTec (also written ZyraTec Solutions) is a software and AI development company headquartered in Ammapettai, Tiruchirappalli (Trichy), Tamil Nadu, India. It builds AI applications, custom software, data platforms, cloud infrastructure, cybersecurity and digital products, and develops ZELDA, a women safety emergency response application.
 
-Important disambiguation: "ZyraTec" is a software company in India. It is unrelated to "Zyrtec", which is an allergy medication. They are different entities with similar spelling.
+## Names and disambiguation
+
+- Official name: ZyraTec
+- Also known as: ZyraTec Solutions, ZyraTec AI, ZyraTec Trichy, ZyraTec Technologies
+- Not to be confused with: Zyrtec, an allergy medication made by an unrelated company. ZyraTec is a software company in India; the two share a similar spelling and nothing else.
+- Common misspelling: "zryatec" refers to ZyraTec.
 
 ## Company facts
 
-- Name: ZyraTec (also written ZyraTec AI)
+- Name: ZyraTec
 - Type: Software company / technology services
 - Headquarters: Ammapettai, Tiruchirappalli (Trichy) 620009, Tamil Nadu, India
 - Founder & CEO: Bragatheesh V
@@ -19,6 +24,13 @@ Important disambiguation: "ZyraTec" is a software company in India. It is unrela
 - Email: zyracmt@gmail.com
 - Website: https://zyratec.vercel.app
 
+## Leadership
+
+- Bragatheesh V — Founder & CEO. Sets ZyraTec's direction, markets, partnerships and operations. Profile: https://zyratec.vercel.app/leadership/bragatheesh-v
+- Abdul Javid J — Co-Founder & CTO. Profile: https://zyratec.vercel.app/leadership/abdul-javid-j
+- Cindhuja B — Chief Marketing Officer. Profile: https://zyratec.vercel.app/leadership/cindhuja-b
+- Dharshini S — Chief Human Resources Officer. Profile: https://zyratec.vercel.app/leadership/dharshini
+
 ## Product
 
 ZELDA — a women safety emergency response system. A mobile app for users plus a web dashboard for police and responders.
@@ -30,6 +42,8 @@ ZELDA — a women safety emergency response system. A mobile app for users plus 
 - Role-based access to cases and evidence
 - Technology: Flutter app, React dashboard, Node.js/Express API, MySQL, Socket.IO
 - Publicly demonstrated at Thinamalar "Vali Kaati" on 29 March 2026 in Tiruchirappalli to around 200 attendees
+- Deployed for campuses: https://zyratec.vercel.app/campus-safety
+- Deployed for workplaces: https://zyratec.vercel.app/workplace-safety
 
 ## Services
 
@@ -51,7 +65,7 @@ ZELDA — a women safety emergency response system. A mobile app for users plus 
 
 ## Key pages
 
-- Home: https://zyratec.vercel.app/
+- Home: https://zyratec.vercel.app
 - About: https://zyratec.vercel.app/about
 - Services: https://zyratec.vercel.app/services
 - Solutions: https://zyratec.vercel.app/solutions

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
 
   title: {
-    default: "ZyraTec | AI & Software Development Company",
+    default: "ZyraTec Solutions | AI & Software Development Company",
     template: "%s",
   },
 
@@ -38,6 +38,9 @@ export const metadata: Metadata = {
   keywords: [
     "ZyraTec",
     "zyratec",
+    "ZyraTec Solutions",
+    "zryatec",
+    "zyratec solutions trichy",
     "software company Trichy",
     "software company India",
     "software development company Tamil Nadu",
@@ -77,7 +80,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
-    title: "ZyraTec | AI & Software Development Company",
+    title: "ZyraTec Solutions | AI & Software Development Company",
     description:
       "ZyraTec builds AI-powered applications, custom software and digital solutions for businesses. Based in Trichy, Tamil Nadu, India.",
     url: SITE_URL,
@@ -94,7 +97,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "ZyraTec | AI & Software Development Company",
+    title: "ZyraTec Solutions | AI & Software Development Company",
     description:
       "AI-powered applications, custom software and digital solutions for businesses. Based in Trichy, Tamil Nadu, India.",
     images: [OG_IMAGE],
@@ -127,7 +130,13 @@ const organizationSchema = {
       "@type": "Organization",
       "@id": `${SITE_URL}/#organization`,
       name: SITE_NAME,
-      alternateName: ["ZyraTec AI", "ZyraTec Trichy", "ZyraTec Technologies"],
+      alternateName: [
+        "ZyraTec Solutions",
+        "ZyraTec AI",
+        "ZyraTec Trichy",
+        "ZyraTec Technologies",
+      ],
+      slogan: "Engineering intelligence. Building what's next.",
       url: SITE_URL,
       logo: {
         "@type": "ImageObject",
@@ -161,9 +170,9 @@ const organizationSchema = {
     },
     {
       "@type": "ProfessionalService",
-      "@id": `${SITE_URL}/#service`,
+      "@id": `${SITE_URL}/#org-service`,
       name: SITE_NAME,
-      alternateName: ["ZyraTec AI", "ZyraTec Trichy"],
+      alternateName: ["ZyraTec Solutions", "ZyraTec AI", "ZyraTec Trichy"],
       url: SITE_URL,
       image: OG_IMAGE,
       priceRange: "₹₹",
@@ -201,7 +210,11 @@ const organizationSchema = {
       "@type": "Person",
       "@id": `${SITE_URL}/#founder`,
       name: "Bragatheesh V",
+      alternateName: "Bragatheesh",
       jobTitle: "Founder & CEO",
+      description:
+        "Bragatheesh V is the Founder and Chief Executive Officer of ZyraTec, a software and AI company in Trichy, Tamil Nadu, India. He sets the company's direction, markets and partnerships, and leads the team behind the ZELDA women safety app.",
+      image: `${SITE_URL}/team/bragatheesh-v.webp`,
       url: `${SITE_URL}/leadership/bragatheesh-v`,
       worksFor: { "@id": `${SITE_URL}/#organization` },
       knowsAbout: [
@@ -216,7 +229,7 @@ const organizationSchema = {
       "@id": `${SITE_URL}/#website`,
       url: SITE_URL,
       name: SITE_NAME,
-      alternateName: ["ZyraTec AI", "ZyraTec Trichy"],
+      alternateName: ["ZyraTec Solutions", "ZyraTec AI", "ZyraTec Trichy"],
       publisher: { "@id": `${SITE_URL}/#organization` },
       inLanguage: "en-IN",
     },

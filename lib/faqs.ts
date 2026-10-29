@@ -85,6 +85,18 @@ export const WORKPLACE_FAQS: Faq[] = [
 
 export const HOME_FAQS: Faq[] = [
   {
+    q: "What is ZyraTec Solutions?",
+    a: "ZyraTec Solutions is the same company as ZyraTec — a software and AI development company in Trichy (Tiruchirappalli), Tamil Nadu, India. We build AI applications, custom software, data platforms, cloud infrastructure, cybersecurity and digital products, and we make the ZELDA women safety app.",
+  },
+  {
+    q: "Who is the CEO of ZyraTec?",
+    a: "Bragatheesh V is the Founder and CEO of ZyraTec. Abdul Javid J is Co-Founder and CTO, Cindhuja B is Chief Marketing Officer and Dharshini S is Chief Human Resources Officer.",
+  },
+  {
+    q: "Is ZyraTec the same as Zyrtec?",
+    a: "No. ZyraTec is a software and AI company in Trichy, India. Zyrtec is an allergy medication made by an unrelated company. The two share a similar spelling and nothing else.",
+  },
+  {
     q: "Where is ZyraTec based?",
     a: "ZyraTec is headquartered in Ammapettai, Trichy (Tiruchirappalli), Tamil Nadu, India, and works remote-first with clients across India and worldwide.",
   },
