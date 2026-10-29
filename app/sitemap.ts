@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/careers",
     "/contact",
   ].map((p) => ({
-    url: `${SITE_URL}${p}`,
+    url: `${SITE_URL}${p || "/"}`,
     lastModified: LAST_MODIFIED,
     changeFrequency: "monthly" as const,
     priority: p === "" ? 1 : 0.8,
