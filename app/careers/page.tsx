@@ -39,7 +39,7 @@ export default function CareersPage() {
     <main>
       <PageHero
         eyebrow="Careers"
-        title="Build the Future With Us"
+        title="Careers at ZyraTec — Remote Software & AI Jobs"
         desc="We're a remote-first team headquartered in Ammapettai, Trichy. Why ZyraTec → Culture → Open Positions → Apply."
       />
       <section className="border-t border-line">

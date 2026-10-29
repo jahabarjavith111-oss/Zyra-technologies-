@@ -30,7 +30,7 @@ export default function CaseStudiesPage() {
     <main>
       <PageHero
         eyebrow="Case Studies"
-        title="Selected Work"
+        title="ZyraTec Case Studies — Software & AI Projects"
         desc="Problem → solution → technology → impact. How ZyraTec engineers outcomes."
       />
       <section className="border-t border-line">

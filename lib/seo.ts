@@ -60,7 +60,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
   services: {
     title: "Software Development Services India | ZyraTec",
     description:
-      "Software development services in India: AI & Generative AI, software engineering, data & analytics, cloud & DevOps, cybersecurity and digital products by ZyraTec. Remote-first delivery across India and worldwide.",
+      "Software development services in India: AI, software engineering, data, cloud, cybersecurity and digital products by ZyraTec, Trichy.",
     keywords: [
       "software development services India",
       "AI development company India",
@@ -74,7 +74,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
   products: {
     title: "ZELDA Women Safety App — SOS, Live GPS & Alerts | ZyraTec",
     description:
-      "ZELDA by ZyraTec is a women safety app in India with one-tap SOS, cancellation guard, live GPS tracking, automatic evidence recording and a real-time police dashboard.",
+      "ZELDA by ZyraTec is a women safety app in India with one-tap SOS, live GPS, automatic evidence recording and a real-time police dashboard.",
     keywords: [
       "ZELDA women safety app",
       "zelda",
@@ -113,7 +113,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
   leadership: {
     title: "Leadership — ZyraTec Team, Trichy | CEO, CTO, CMO & CHRO",
     description:
-      "Meet ZyraTec's leadership in Trichy: Bragatheesh V (CEO), Abdul Javid J (CTO), Cindhuja B (CMO) and Dharshini S (CHRO) — vision, technology, marketing and people.",
+      "Meet ZyraTec's leadership in Trichy: Bragatheesh V (CEO), Abdul Javid J (CTO), Cindhuja B (CMO) and Dharshini S (CHRO).",
     keywords: ["ZyraTec leadership", "Bragatheesh ZyraTec", "Abdul Javid ZyraTec", "Cindhuja ZyraTec", "Dharshini S ZyraTec"],
     path: "/leadership",
   },

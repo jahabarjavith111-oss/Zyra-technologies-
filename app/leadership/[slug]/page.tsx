@@ -17,8 +17,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const m = TEAM.find((x) => x.slug === slug);
   if (!m) return { title: "Leadership — ZyraTec" };
   const path = `/leadership/${m.slug}`;
-  const title = `${m.name} — ${m.role}, ZyraTec Trichy`;
-  const description = `${m.name}, ${m.role} at ZyraTec (Trichy, India). ${m.bio}`;
+  const shortRole = m.role.replace(/\s*\([^)]*\)/g, "").trim();
+  const title = `${m.name} — ${shortRole}, ZyraTec`;
+  const description = `${m.name}, ${m.role} at ZyraTec, Trichy. ${m.focus.split(" · ").slice(0, 2).join(", ")}.`;
   return {
     title,
     description,
@@ -51,24 +52,34 @@ export default async function MemberDetail({ params }: { params: Promise<{ slug:
     { label: m.name, href: canonical(`/leadership/${m.slug}`) },
   ];
 
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: m.name,
+    jobTitle: m.role,
+    description: m.bio,
+    image: m.photo.startsWith("http") ? m.photo : `${SITE_URL}${m.photo}`,
+    worksFor: {
+      "@type": "Organization",
+      name: "ZyraTec",
+      url: SITE_URL,
+    },
+    url: canonical(`/leadership/${m.slug}`),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Leadership", item: canonical("/leadership") },
+      { "@type": "ListItem", position: 3, name: m.name, item: canonical(`/leadership/${m.slug}`) },
+    ],
+  };
+
   return (
     <main>
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "Person",
-          name: m.name,
-          jobTitle: m.role,
-          description: m.bio,
-          image: m.photo.startsWith("http") ? m.photo : `${SITE_URL}${m.photo}`,
-          worksFor: {
-            "@type": "Organization",
-            name: "ZyraTec",
-            url: SITE_URL,
-          },
-          url: canonical(`/leadership/${m.slug}`),
-        }}
-      />
+      <JsonLd data={[personSchema, breadcrumbSchema]} />
       <Breadcrumbs items={breadcrumbs} />
       <PageHero eyebrow={`Leadership · ${m.n}`} title={m.name} desc={m.role} />
       <section className="border-t border-line">

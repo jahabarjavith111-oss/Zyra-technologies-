@@ -29,7 +29,7 @@ export default function LeadershipPage() {
     <main>
       <PageHero
         eyebrow="Leadership"
-        title="The people building ZyraTec."
+        title="ZyraTec Leadership — Trichy, India"
         desc="A leadership team spanning vision, technology, marketing and people — converging on future products and solutions."
       />
       <Leadership />

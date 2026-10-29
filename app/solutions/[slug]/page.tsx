@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const s = SOLUTIONS.find((x) => x.slug === slug);
   if (!s) return { title: "Solution — ZyraTec" };
   const path = `/solutions/${s.slug}`;
-  const title = `${s.title} for Businesses in India — ${s.tagline} | ZyraTec`;
-  const description = `${s.title} by ZyraTec, Trichy, India. ${s.desc}`;
+  const title = `${s.title} Solutions in India | ZyraTec`;
+  const description = `${s.title} solutions by ZyraTec, Trichy, India. ${s.tagline}`;
   return {
     title,
     description,

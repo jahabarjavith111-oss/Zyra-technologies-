@@ -30,7 +30,7 @@ export default function ServicesPage() {
     <main>
       <PageHero
         eyebrow="Services"
-        title="What ZyraTec Does"
+        title="Software Development Services in India"
         desc="Six engineering disciplines, one integrated team — scoped to outcomes, built for production."
       />
       <section className="border-t border-line">

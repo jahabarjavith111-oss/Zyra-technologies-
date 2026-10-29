@@ -18,11 +18,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!c) return { title: "Case Study — ZyraTec" };
   const path = `/case-studies/${c.slug}`;
   const title = c.slug === "zelda-women-safety"
-    ? "ZELDA Women Safety App Case Study — SOS, Live GPS & Police Dashboard | ZyraTec"
-    : `${c.title} Case Study — ${c.subtitle} | ZyraTec`;
+    ? "ZELDA Women Safety App Case Study | ZyraTec"
+    : `${c.title} Case Study | ZyraTec`;
   const description = c.slug === "zelda-women-safety"
-    ? "How ZyraTec built ZELDA, a women safety app in India: one-tap SOS, live GPS streaming, automatic evidence recording and a real-time police dashboard. Showcased to 200 attendees in Trichy."
-    : `${c.title}: ${c.subtitle}. Problem, solution, technology and impact by ZyraTec, India.`;
+    ? "How ZyraTec built ZELDA, a women safety app in India: SOS, live GPS, automatic evidence recording and a real-time police dashboard."
+    : `${c.title} case study by ZyraTec, Trichy: ${c.subtitle}.`;
   return {
     title,
     description,
@@ -76,14 +76,27 @@ export default async function CaseDetail({ params }: { params: Promise<{ slug: s
     "@type": "Article",
     headline: `${c.title} — ${c.subtitle}`,
     description: c.solution,
+    image: OG_IMAGE,
+    datePublished: "2026-10-12",
+    dateModified: "2026-10-28",
     author: { "@type": "Organization", name: "ZyraTec", url: SITE_URL },
     publisher: { "@type": "Organization", name: "ZyraTec", url: SITE_URL },
     mainEntityOfPage: canonical(`/case-studies/${c.slug}`),
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Case Studies", item: canonical("/case-studies") },
+      { "@type": "ListItem", position: 3, name: c.title, item: canonical(`/case-studies/${c.slug}`) },
+    ],
+  };
+
   return (
     <main>
-      <JsonLd data={articleSchema} />
+      <JsonLd data={[articleSchema, breadcrumbSchema]} />
       <Breadcrumbs items={breadcrumbs} />
       <PageHero eyebrow={`Project — ${c.n}`} title={c.title} desc={c.subtitle} />
       <section className="border-t border-line">
