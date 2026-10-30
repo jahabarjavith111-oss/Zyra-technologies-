@@ -36,9 +36,9 @@ export default function AboutPage() {
   return (
     <main>
       <PageHero
-        eyebrow="About ZyraTec"
-        title="About ZyraTec — Software Company in Trichy"
-        desc="ZyraTec is a technology company building intelligent digital solutions across software, AI, data and cloud."
+        eyebrow="ZyraTec Solutions"
+        title="About ZyraTec Solutions — Software Company in Trichy"
+        desc="ZyraTec Solutions is a technology company building intelligent digital solutions across software, AI, data and cloud — from Trichy, Tamil Nadu, India."
       />
       <section className="border-t border-line">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">

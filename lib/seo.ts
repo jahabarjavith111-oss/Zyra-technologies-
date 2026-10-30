@@ -143,10 +143,16 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     path: "/workplace-safety",
   },
   about: {
-    title: "About ZyraTec — Software Company in Trichy, India",
+    title: "About ZyraTec Solutions — Software Company in Trichy, India",
     description:
-      "Meet ZyraTec: a remote-first software company in Trichy, Tamil Nadu building AI systems, enterprise software and digital products. Vision, mission and values.",
-    keywords: ["ZyraTec", "zyratec", "software company Trichy", "about ZyraTec"],
+      "ZyraTec Solutions is a remote-first software and AI company in Trichy, Tamil Nadu, India. Meet the team, vision, mission and engineering values behind ZELDA.",
+    keywords: [
+      "ZyraTec",
+      "zyratec",
+      "ZyraTec Solutions",
+      "about ZyraTec",
+      "software company Trichy",
+    ],
     path: "/about",
   },
   services: {
