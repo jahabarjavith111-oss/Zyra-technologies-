@@ -1,4 +1,14 @@
-# ZyraTec
+import { SITE_URL } from "@/lib/seo";
+
+/**
+ * Served at /llms.txt — a plain-language fact sheet for AI answer engines.
+ * Generated from SITE_URL so the site stays portable across domains: change
+ * NEXT_PUBLIC_SITE_URL and every URL here follows automatically.
+ */
+export const dynamic = "force-static";
+
+export function GET() {
+  const body = `# ZyraTec Solutions
 
 > ZyraTec (also written ZyraTec Solutions) is a software and AI development company headquartered in Ammapettai, Tiruchirappalli (Trichy), Tamil Nadu, India. It builds AI applications, custom software, data platforms, cloud infrastructure, cybersecurity and digital products, and develops ZELDA, a women safety emergency response application.
 
@@ -11,7 +21,7 @@
 
 ## Company facts
 
-- Name: ZyraTec
+- Name: ZyraTec Solutions
 - Type: Software company / technology services
 - Headquarters: Ammapettai, Tiruchirappalli (Trichy) 620009, Tamil Nadu, India
 - Founder & CEO: Bragatheesh V
@@ -22,14 +32,14 @@
 - Business hours: Monday to Saturday, 09:00 to 22:00 IST
 - Phone: +91 88079 84687, +91 93459 92521
 - Email: zyracmt@gmail.com
-- Website: https://zyratec.vercel.app
+- Website: ${SITE_URL}
 
 ## Leadership
 
-- Bragatheesh V — Founder & CEO. Sets ZyraTec's direction, markets, partnerships and operations. Profile: https://zyratec.vercel.app/leadership/bragatheesh-v
-- Abdul Javid J — Co-Founder & CTO. Profile: https://zyratec.vercel.app/leadership/abdul-javid-j
-- Cindhuja B — Chief Marketing Officer. Profile: https://zyratec.vercel.app/leadership/cindhuja-b
-- Dharshini S — Chief Human Resources Officer. Profile: https://zyratec.vercel.app/leadership/dharshini
+- Bragatheesh V — Founder & CEO. Sets the company's direction, markets, partnerships and operations. Profile: ${SITE_URL}/leadership/bragatheesh-v
+- Abdul Javid J — Co-Founder & CTO. Profile: ${SITE_URL}/leadership/abdul-javid-j
+- Cindhuja B — Chief Marketing Officer. Profile: ${SITE_URL}/leadership/cindhuja-b
+- Dharshini S — Chief Human Resources Officer. Profile: ${SITE_URL}/leadership/dharshini
 
 ## Product
 
@@ -42,8 +52,8 @@ ZELDA — a women safety emergency response system. A mobile app for users plus 
 - Role-based access to cases and evidence
 - Technology: Flutter app, React dashboard, Node.js/Express API, MySQL, Socket.IO
 - Publicly demonstrated at Thinamalar "Vali Kaati" on 29 March 2026 in Tiruchirappalli to around 200 attendees
-- Deployed for campuses: https://zyratec.vercel.app/campus-safety
-- Deployed for workplaces: https://zyratec.vercel.app/workplace-safety
+- Deployed for campuses: ${SITE_URL}/campus-safety
+- Deployed for workplaces: ${SITE_URL}/workplace-safety
 
 ## Services
 
@@ -65,17 +75,26 @@ ZELDA — a women safety emergency response system. A mobile app for users plus 
 
 ## Key pages
 
-- Home: https://zyratec.vercel.app
-- About: https://zyratec.vercel.app/about
-- Services: https://zyratec.vercel.app/services
-- Solutions: https://zyratec.vercel.app/solutions
-- ZELDA product: https://zyratec.vercel.app/products
-- Case studies: https://zyratec.vercel.app/case-studies
-- ZELDA case study: https://zyratec.vercel.app/case-studies/zelda-women-safety
-- Leadership: https://zyratec.vercel.app/leadership
-- Founder profile: https://zyratec.vercel.app/leadership/bragatheesh-v
-- Custom software in Trichy: https://zyratec.vercel.app/custom-software-trichy
-- Campus safety: https://zyratec.vercel.app/campus-safety
-- Workplace safety: https://zyratec.vercel.app/workplace-safety
-- Careers: https://zyratec.vercel.app/careers
-- Contact: https://zyratec.vercel.app/contact
+- Home: ${SITE_URL}
+- About: ${SITE_URL}/about
+- Services: ${SITE_URL}/services
+- Solutions: ${SITE_URL}/solutions
+- ZELDA product: ${SITE_URL}/products
+- Case studies: ${SITE_URL}/case-studies
+- ZELDA case study: ${SITE_URL}/case-studies/zelda-women-safety
+- Leadership: ${SITE_URL}/leadership
+- Founder profile: ${SITE_URL}/leadership/bragatheesh-v
+- Custom software in Trichy: ${SITE_URL}/custom-software-trichy
+- Campus safety: ${SITE_URL}/campus-safety
+- Workplace safety: ${SITE_URL}/workplace-safety
+- Careers: ${SITE_URL}/careers
+- Contact: ${SITE_URL}/contact
+`;
+
+  return new Response(body, {
+    headers: {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Cache-Control": "public, max-age=3600",
+    },
+  });
+}
