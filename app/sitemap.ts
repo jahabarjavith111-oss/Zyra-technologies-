@@ -4,7 +4,7 @@ import { TEAM, CASES } from "@/lib/company";
 import { SITE_URL } from "@/lib/seo";
 
 /** Fixed content date — update when page content changes (avoids a false "modified now" on every build). */
-const LAST_MODIFIED = new Date("2026-10-29T00:00:00+05:30");
+const LAST_MODIFIED = new Date("2026-10-30T00:00:00+05:30");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const statics = [
