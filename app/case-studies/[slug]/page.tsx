@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!c) return { title: "Case Study — ZyraTec" };
   const path = `/case-studies/${c.slug}`;
   const title = c.slug === "zelda-women-safety"
-    ? "ZELDA Women Safety App Case Study | ZyraTec"
-    : `${c.title} Case Study | ZyraTec`;
+    ? "ZELDA Women Safety App Case Study | ZyraTec Solutions"
+    : `${c.title} Case Study | ZyraTec Solutions`;
   const description = c.slug === "zelda-women-safety"
     ? "How ZyraTec built ZELDA, a women safety app in India: SOS, live GPS, automatic evidence recording and a real-time police dashboard."
     : `${c.title} case study by ZyraTec, Trichy: ${c.subtitle}.`;

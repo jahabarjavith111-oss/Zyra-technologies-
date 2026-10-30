@@ -15,11 +15,14 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const m = TEAM.find((x) => x.slug === slug);
-  if (!m) return { title: "Leadership — ZyraTec" };
+  if (!m) return { title: "Leadership — ZyraTec Solutions" };
   const path = `/leadership/${m.slug}`;
-  const shortRole = m.role.replace(/\s*\([^)]*\)/g, "").trim();
-  const title = `${m.name} — ${shortRole}, ZyraTec`;
-  const description = `${m.name}, ${m.role} at ZyraTec, Trichy. ${m.focus.split(" · ").slice(0, 2).join(", ")}.`;
+  const shortRole = m.role
+    .replace(/\s*\([^)]*\)/g, "")
+    .replace("Chief Human Resources Officer", "Chief HR Officer")
+    .trim();
+  const title = `${m.name} — ${shortRole}, ZyraTec Solutions`;
+  const description = `${m.name}, ${m.role} at ZyraTec Solutions, Trichy. ${m.focus.split(" · ").slice(0, 2).join(", ")}.`;
   return {
     title,
     description,

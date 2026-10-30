@@ -106,7 +106,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     path: "/",
   },
   "custom-software-trichy": {
-    title: "Custom Software Development in Trichy | ZyraTec",
+    title: "Custom Software Development in Trichy | ZyraTec Solutions",
     description:
       "ZyraTec builds custom software in Trichy, Tamil Nadu: web apps, AI systems, data platforms and mobile products, delivered remote-first across India.",
     keywords: [
@@ -119,7 +119,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     path: "/custom-software-trichy",
   },
   "campus-safety": {
-    title: "Campus Safety Software for Colleges in India | ZyraTec",
+    title: "Campus Safety Software for Colleges | ZyraTec Solutions",
     description:
       "ZELDA campus safety software gives colleges one-tap SOS, live GPS, recorded evidence and a real-time responder dashboard for student safety in India.",
     keywords: [
@@ -131,7 +131,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     path: "/campus-safety",
   },
   "workplace-safety": {
-    title: "Workplace Safety App for Employees in India | ZyraTec",
+    title: "Workplace Safety App in India | ZyraTec Solutions",
     description:
       "ZELDA is an employee safety app for Indian workplaces: one-tap SOS, live GPS, automatic evidence recording and a real-time response dashboard.",
     keywords: [
@@ -156,7 +156,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     path: "/about",
   },
   services: {
-    title: "Software Development Services India | ZyraTec",
+    title: "Software Development Services India | ZyraTec Solutions",
     description:
       "Software development services in India: AI, software engineering, data, cloud, cybersecurity and digital products by ZyraTec, Trichy.",
     keywords: [
@@ -170,7 +170,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     path: "/services",
   },
   products: {
-    title: "ZELDA Women Safety App — SOS, Live GPS & Alerts | ZyraTec",
+    title: "ZELDA Women Safety App — SOS & Live GPS | ZyraTec Solutions",
     description:
       "ZELDA by ZyraTec is a women safety app in India with one-tap SOS, live GPS, automatic evidence recording and a real-time police dashboard.",
     keywords: [
@@ -188,42 +188,42 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     path: "/products",
   },
   solutions: {
-    title: "Business Technology Solutions — AI & Automation | ZyraTec",
+    title: "Business Technology, AI & Automation | ZyraTec Solutions",
     description:
       "Packaged technology solutions: intelligent automation, AI transformation, enterprise software, data intelligence, cloud transformation and digital security.",
     keywords: ["intelligent automation India", "AI transformation", "enterprise software India"],
     path: "/solutions",
   },
   technology: {
-    title: "Our Technology Stack — AI, Java, React, Cloud | ZyraTec",
+    title: "Tech Stack — AI, Java, React, Cloud | ZyraTec Solutions",
     description:
       "ZyraTec's technology ecosystem: Generative AI, LLMs, Java, Spring Boot, React, Node.js, Python, AWS, MySQL, PostgreSQL and MongoDB — proven in production.",
     keywords: ["AI tech stack", "software technology stack", "ZyraTec technology"],
     path: "/technology",
   },
   "case-studies": {
-    title: "Case Studies — ZELDA & Enterprise Work | ZyraTec",
+    title: "Case Studies — ZELDA & Enterprise Work | ZyraTec Solutions",
     description:
       "Selected work by ZyraTec: ZELDA women safety emergency response system, enterprise data platform and AI support copilot. Problem, solution, impact.",
     keywords: ["ZELDA case study", "women safety app case study", "ZyraTec work"],
     path: "/case-studies",
   },
   leadership: {
-    title: "Leadership — ZyraTec Team, Trichy | CEO, CTO, CMO & CHRO",
+    title: "Leadership — ZyraTec Solutions | CEO, CTO & CMO",
     description:
       "Meet ZyraTec's leadership in Trichy: Bragatheesh V (CEO), Abdul Javid J (CTO), Cindhuja B (CMO) and Dharshini S (CHRO).",
     keywords: ["ZyraTec leadership", "Bragatheesh ZyraTec", "Abdul Javid ZyraTec", "Cindhuja ZyraTec", "Dharshini S ZyraTec"],
     path: "/leadership",
   },
   careers: {
-    title: "Careers at ZyraTec — AI, Software & Data Jobs (Remote)",
+    title: "Careers at ZyraTec Solutions — Software & AI Jobs",
     description:
       "Join ZyraTec: open roles for full-stack engineers, AI engineers, data engineers, product designers and cloud engineers. Remote-first, based in Trichy, India.",
     keywords: ["ZyraTec careers", "software jobs Trichy", "AI engineer jobs India remote"],
     path: "/careers",
   },
   contact: {
-    title: "Contact ZyraTec — Start Your Software / AI Project",
+    title: "Contact ZyraTec Solutions — Start Your Project",
     description:
       "Contact ZyraTec in Trichy, India for software development, AI development or women safety tech. We reply within 2 business days.",
     keywords: ["contact ZyraTec", "software company contact Trichy", "AI development enquiry India"],
