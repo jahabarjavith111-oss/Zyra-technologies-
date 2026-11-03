@@ -79,7 +79,7 @@ export default function ProductsPage() {
     applicationCategory: "SafetyApplication",
     operatingSystem: "Android, iOS, Web",
     softwareVersion: "0.1.0",
-    fileSize: "262 MB",
+    fileSize: "156 MB",
     downloadUrl: APK_URL,
     installUrl: APK_URL,
     offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
@@ -193,7 +193,7 @@ export default function ProductsPage() {
                   </div>
                   <p className="mt-3 text-[13.5px] leading-6 text-muted">
                     Install the APK directly on your Android phone.
-                    Version 0.1.0 · 262 MB.
+                    Version 0.1.0 · 156 MB.
                   </p>
                   <a
                     href={APK_URL}
