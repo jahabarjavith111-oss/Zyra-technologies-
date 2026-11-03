@@ -25,6 +25,9 @@ export const metadata = {
   },
 };
 
+const APK_URL =
+  "https://github.com/jahabarjavith111-oss/Zyra-technologies-/releases/download/zelda-android-v0.1.0/ZELDA-v0.1.0.apk";
+
 const WORKFLOW = [
   ["SOS activated", "User triggers SOS in the mobile app when in danger."],
   ["Cancellation window", "A short window guards against accidental activation."],
@@ -75,6 +78,10 @@ export default function ProductsPage() {
     name: "ZELDA — Women Safety Emergency Response App",
     applicationCategory: "SafetyApplication",
     operatingSystem: "Android, iOS, Web",
+    softwareVersion: "0.1.0",
+    fileSize: "262 MB",
+    downloadUrl: APK_URL,
+    installUrl: APK_URL,
     offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
     author: { "@type": "Organization", name: "ZyraTec", url: SITE_URL },
     description:
@@ -151,6 +158,69 @@ export default function ProductsPage() {
                       </li>
                     ))}
                   </ol>
+                </div>
+
+                <div
+                  id="download"
+                  className="mt-4 scroll-mt-24 rounded-2xl border border-accent/25 bg-accent-soft p-6"
+                >
+                  <div className="flex items-center gap-3">
+                    <span
+                      className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-ink text-paper"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        className="h-5 w-5"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={1.8}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <rect x="7" y="2" width="10" height="20" rx="2" />
+                        <path d="M11 18h2" />
+                      </svg>
+                    </span>
+                    <div>
+                      <div className="text-[11px] font-semibold tracking-[0.22em] text-accent">
+                        ANDROID APP
+                      </div>
+                      <div className="mt-0.5 font-display text-lg font-bold">
+                        Download ZELDA
+                      </div>
+                    </div>
+                  </div>
+                  <p className="mt-3 text-[13.5px] leading-6 text-muted">
+                    Install the APK directly on your Android phone.
+                    Version 0.1.0 · 262 MB.
+                  </p>
+                  <a
+                    href={APK_URL}
+                    download="ZELDA-v0.1.0.apk"
+                    type="application/vnd.android.package-archive"
+                    className="mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-ink px-5 py-3 text-[14px] font-semibold text-paper transition-colors hover:bg-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-4 w-4"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M12 3v12" />
+                      <path d="m7 10 5 5 5-5" />
+                      <path d="M5 21h14" />
+                    </svg>
+                    Download APK
+                  </a>
+                  <p className="mt-3 text-[11.5px] leading-5 text-muted">
+                    After downloading, open the file and allow installation
+                    from this source.
+                  </p>
                 </div>
               </div>
             </article>
