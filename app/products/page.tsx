@@ -163,6 +163,47 @@ export default function ProductsPage() {
                   </ol>
                 </div>
 
+                <Link
+                  href="/zelda-download"
+                  className="group mt-4 block rounded-2xl border border-line bg-paper p-6 transition-colors hover:border-accent/40 hover:bg-accent-soft"
+                >
+                  <div className="flex items-center gap-3">
+                    <span
+                      className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-ink text-paper"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        className="h-5 w-5"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={1.8}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M12 3v12" />
+                        <path d="m7 10 5 5 5-5" />
+                        <path d="M5 21h14" />
+                      </svg>
+                    </span>
+                    <div>
+                      <div className="text-[11px] font-semibold tracking-[0.22em] text-accent">
+                        ANDROID APP
+                      </div>
+                      <div className="mt-0.5 font-display text-lg font-bold">
+                        ZELDA APP DOWNLOAD
+                      </div>
+                    </div>
+                  </div>
+                  <p className="mt-3 text-[13.5px] leading-6 text-muted">
+                    Download the official ZELDA Women Safety Guardian Android
+                    application.
+                  </p>
+                  <span className="mt-4 inline-block text-[14px] font-semibold text-ink group-hover:text-accent">
+                    Open download page →
+                  </span>
+                </Link>
+
                 <div
                   id="download"
                   className="mt-4 scroll-mt-24 rounded-2xl border border-accent/25 bg-accent-soft p-6"
