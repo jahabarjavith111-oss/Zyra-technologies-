@@ -32,6 +32,9 @@ const APK_URL =
 const APK_V3_URL =
   "https://github.com/jahabarjavith111-oss/Zyra-technologies-/releases/download/zelda-android-v3-0.1.0/ZELDA-v3-0.1.0.apk";
 
+const APK_V4_URL =
+  "https://github.com/jahabarjavith111-oss/Zyra-technologies-/releases/download/zelda-android-v4-0.1.0/ZELDA-v4-0.1.0.apk";
+
 const DOWNLOADS = [
   {
     id: "download",
@@ -43,6 +46,17 @@ const DOWNLOADS = [
     filename: "ZELDA-v0.1.0.apk",
     button: "Download APK",
     note: "After downloading, open the file and allow installation from this source.",
+  },
+  {
+    id: "download-v4",
+    label: "ANDROID APP · V4",
+    title: "Download ZELDA v4",
+    description: "Updated ZELDA Women Safety Guardian application.",
+    details: "Install the ZELDA v4 APK directly on your Android phone. Version 0.1.0 · 72 MB.",
+    url: APK_V4_URL,
+    filename: "ZELDA-v4-0.1.0.apk",
+    button: "Download ZELDA v4 APK",
+    note: "After downloading, open the file and allow installation from this source. This installs as a separate app from ZELDA v2 and v3. Arm64 (64-bit) Android devices only.",
   },
   {
     id: "download-v3",
